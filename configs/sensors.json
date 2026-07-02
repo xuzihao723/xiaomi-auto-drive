@@ -1,0 +1,30 @@
+{
+  "map": "Town10HD_Opt",
+  "seed": 42,
+  "fixed_delta_seconds": 0.05,
+  "warmup_frames": 20,
+  "capture_frames": 1000,
+  "npc_vehicles": 40,
+  "walkers": 20,
+  "camera": {
+    "width": 1280,
+    "height": 720,
+    "fov": 90,
+    "sensor_tick": 0.05,
+    "x": 1.5,
+    "y": 0.0,
+    "z": 1.7
+  },
+  "lidar": {
+    "channels": 32,
+    "range": 50,
+    "points_per_second": 100000,
+    "rotation_frequency": 20,
+    "upper_fov": 10,
+    "lower_fov": -30,
+    "sensor_tick": 0.05,
+    "x": 0.0,
+    "y": 0.0,
+    "z": 2.0
+  }
+}

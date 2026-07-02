@@ -1,0 +1,14 @@
+{
+  "dataset": "data/kitti/training",
+  "sample_count": 1000,
+  "expected_count": 1000,
+  "total_labels": 4131,
+  "car_labels": 3534,
+  "pedestrian_labels": 597,
+  "empty_label_files": 64,
+  "average_lidar_points": 2350.744,
+  "error_count": 0,
+  "warning_count": 0,
+  "errors": [],
+  "warnings": []
+}
