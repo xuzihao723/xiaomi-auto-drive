@@ -1,0 +1,10 @@
+{
+  "weights": "weights\\best.pt",
+  "source": "data\\yolo_carla\\images\\test",
+  "images": 150,
+  "imgsz": 768,
+  "device": "cpu",
+  "mean_latency_ms": 65.50342666606109,
+  "median_latency_ms": 64.7672499762848,
+  "fps": 15.26637690418911
+}

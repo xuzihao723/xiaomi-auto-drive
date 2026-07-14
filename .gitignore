@@ -1,33 +1,30 @@
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Virtual environment
-venv/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
 .venv/
+venv/
 
-# IDE
+# IDE / OS
 .vscode/
 .idea/
-
-# CARLA生成数据
-data/raw/
-data/kitti/
-data/debug/
-data/sensor_test/
-
-# 大型压缩包
-*.zip
-*.tar
-*.tar.gz
-
-# 系统文件
 .DS_Store
 Thumbs.db
 
-# 日志和崩溃文件
+# Runtime and generated data
+data/
+runs/
+outputs/
+output/
 *.log
 core
 core.*
+
+# Large binary artifacts are distributed through GitHub Releases
+*.zip
+*.pt
+*.onnx
+*.engine
+*.mp4
+

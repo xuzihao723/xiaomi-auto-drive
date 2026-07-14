@@ -1,235 +1,105 @@
-# 基于视觉的城市道路自动驾驶仿真系统
+# Xiaomi Auto Drive
 
-## 第二周：CARLA 仿真数据采集与 KITTI 格式转换
+基于视觉的城市道路端到端自动驾驶仿真系统。本仓库汇总项目前三周成果，覆盖 CARLA 仿真环境、城市道路多传感器数据采集、KITTI/YOLO 数据转换、YOLOv8 四类别目标检测、性能评估和连续场景演示。
 
-本项目基于 CARLA 0.9.15，在 Windows 宿主机运行 CARLA Server，在 WSL2 Ubuntu 22.04 中运行 Python Client。
+> 本项目用于课程学习与仿真实验，不代表小米汽车官方产品，也不与小米集团存在隶属或授权关系。
 
-第二周完成以下任务：
+## 项目进度
 
-1. 使用 CARLA Python API 控制车辆。
-2. 配置 RGB 相机和激光雷达。
-3. 生成车辆和行人交通场景。
-4. 同步采集图像、点云和目标标注信息。
-5. 将 CARLA 原始数据转换为 KITTI Object 格式。
-6. 完成1000帧仿真数据集采集和自动验收。
+| 周次 | 阶段 | 核心成果 | 完整提交包 |
+| --- | --- | --- | --- |
+| Week 1 | 环境搭建与仿真验证 | WSL2、Ubuntu 22.04、CARLA 0.9.15 环境；交通流与人工驾驶验证 | [下载 xiaomi_week1.zip](https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week1-submission/xiaomi_week1.zip) |
+| Week 2 | 数据采集与格式转换 | RGB + LiDAR 同步采集；1000 帧城市道路数据；KITTI 标签与自动验收 | [下载 xiaomi_week2.zip](https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week2-submission/xiaomi_week2.zip) |
+| Week 3 | 感知模块开发 | YOLOv8 四类别检测；独立测试集评估；FPS 测试；一分钟演示视频 | [下载 xiaomi_week3.zip](https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week3-submission/xiaomi_week3.zip) |
 
-## 环境信息
+## 系统流程
 
-| 项目 | 版本 |
-| --- | --- |
-| 操作系统 | Ubuntu 22.04 / WSL2 |
-| Python | 3.10 |
-| CARLA Server | 0.9.15 Windows Package |
-| CARLA Python API | 0.9.15 |
-| NumPy | 1.23.5 |
-| OpenCV | 4.11.0 |
-| Git | 2.34+ |
+```mermaid
+flowchart LR
+    A["CARLA 0.9.15 城市场景"] --> B["RGB / LiDAR / Actor 真值同步采集"]
+    B --> C["KITTI 数据集"]
+    C --> D["四类别 YOLO 数据集"]
+    D --> E["YOLOv8n 微调"]
+    E --> F["独立测试集评估"]
+    E --> G["完整序列推理"]
+    F --> H["PR 曲线 / 混淆矩阵 / mAP / FPS"]
+    G --> I["连续道路检测演示视频"]
+```
 
-## 项目结构
+更详细的模块关系见 [系统架构说明](docs/system-architecture.md)，每周工作记录见 [阶段进度说明](docs/weekly-progress.md)。
+
+## 第三周检测结果
+
+检测类别：`Car`、`Pedestrian`、`TrafficLight`、`TrafficSign`。
+
+| 指标 | 结果 |
+| --- | ---: |
+| Precision | 0.717 |
+| Recall | 0.708 |
+| mAP@0.5 | 0.707 |
+| mAP@0.5:0.95 | 0.538 |
+| CPU 推理速度 | 15.27 FPS |
+| 演示序列 | 1000 帧 / 66.67 秒 |
+
+![Week 3 prediction example](week3-perception/evaluation/val_batch0_pred.jpg)
+
+## 仓库结构
 
 ```text
-week2/
-├── configs/
-│   └── sensors.json
-├── src/
-│   ├── 01_control_vehicle.py
-│   ├── 02_sensor_test.py
-│   ├── collect_raw.py
-│   ├── convert_kitti.py
-│   └── validate_kitti.py
-├── docs/
-│   ├── week2_report.md
-│   └── kitti_validation_report.json
-├── data/
-│   ├── raw/
-│   ├── kitti/
-│   └── debug/
+xiaomi-auto-drive/
 ├── README.md
-├── requirements.txt
-└── .gitignore
+├── docs/                         # 总体架构与阶段进度
+├── week1-environment/            # 环境搭建文档与验证截图
+├── week2-data-pipeline/          # CARLA 采集、传感器配置与 KITTI 转换
+└── week3-perception/             # YOLOv8 训练、评估、推理与报告
 ```
 
-数据集文件较大，不直接提交到普通 Git 仓库，通过单独的 ZIP 文件交付。
+主分支用于保存可审阅、可维护的代码、配置、文档和代表性结果。原始数据集、模型权重和演示视频体积较大，统一放在对应的 GitHub Release 附件中。
 
-## CARLA Server 启动
+## 快速开始
 
-在 Windows PowerShell 中执行：
-
-```powershell
-cd "E:\CARLA_0.9.15\WindowsNoEditor"
-.\CarlaUE4.exe -quality-level=Low -windowed -ResX=1280 -ResY=720
-```
-
-## Python 环境
-
-在 WSL2 Ubuntu 中执行：
+### Week 2：CARLA 数据采集
 
 ```bash
-cd ~/xiaomi_ad_project/week1
-source venv/bin/activate
-
-cd ~/xiaomi_ad_project/week2
+cd week2-data-pipeline
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-安装依赖：
+CARLA Server 运行在 Windows，Python Client 可运行在 WSL2 Ubuntu 22.04。详细命令见 [Week 2 README](week2-data-pipeline/README.md)。
+
+### Week 3：目标检测
 
 ```bash
-pip install -r requirements.txt
+cd week3-perception
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-获取 Windows 宿主机地址：
+完整 ZIP 解压后，可直接使用 `weights/best.pt` 进行评估或推理。详细命令见 [Week 3 README](week3-perception/README.md)。
 
-```bash
-export WIN_HOST=$(ip route | awk '/default/ {print $3; exit}')
-echo "$WIN_HOST"
-```
+## 提交包校验
 
-## 车辆控制测试
+| 文件 | SHA256 |
+| --- | --- |
+| `xiaomi_week1.zip` | `23D4E796FE74ED7A06BC39A054117DD8A0F9B4D187E433D7E1441A3B54861A44` |
+| `xiaomi_week2.zip` | `13608408E19E2F42C8D543A14DBC60B0A855582624FDB519B239D6D7EC7D8767` |
+| `xiaomi_week3.zip` | `994BD829C51714C3C21A4B955FE59C80FBF5FB43198D43C3BA9054320BB7B774` |
 
-```bash
-python src/01_control_vehicle.py \
-  --host "$WIN_HOST" \
-  --port 2000
-```
+## 当前局限性
 
-## 传感器测试
+- Week 3 的交通灯和交通标志标签由伪标注生成并抽查，不应视为完全人工标注真值。
+- TrafficSign 样本数量较少，指标波动大于其他类别。
+- 数据主要来自 Town10HD 单地图及相邻连续帧，跨地图、天气和时间条件的泛化仍需验证。
+- 当前速度数据为 CPU 基准，尚未完成 TensorRT 和真实车载端到端延迟测试。
 
-```bash
-python src/02_sensor_test.py \
-  --host "$WIN_HOST" \
-  --port 2000 \
-  --config configs/sensors.json \
-  --output data/sensor_test \
-  --frames 20
-```
+## 技术栈
 
-## 原始数据采集
+- CARLA 0.9.15
+- Windows 11 + WSL2 Ubuntu 22.04
+- Python 3.10+
+- PyTorch / Ultralytics YOLOv8
+- OpenCV / NumPy / Matplotlib / ReportLab
 
-```bash
-python src/collect_raw.py \
-  --host "$WIN_HOST" \
-  --port 2000 \
-  --config configs/sensors.json \
-  --output data/raw \
-  --frames 1000
-```
-
-原始数据包括：
-
-```text
-data/raw/
-├── image/
-├── lidar/
-└── meta/
-```
-
-每个样本使用六位数字编号：
-
-```text
-000000
-000001
-...
-000999
-```
-
-## KITTI 格式转换
-
-```bash
-python src/convert_kitti.py \
-  --input data/raw \
-  --output data/kitti \
-  --limit 1000 \
-  --debug-frames 20
-```
-
-转换后的目录：
-
-```text
-data/kitti/training/
-├── image_2/
-├── velodyne/
-├── label_2/
-└── calib/
-```
-
-KITTI 标签包含15个字段：
-
-```text
-type truncated occluded alpha
-bbox_left bbox_top bbox_right bbox_bottom
-height width length
-location_x location_y location_z
-rotation_y
-```
-
-当前数据集使用的主要类别：
-
-- `Car`
-- `Pedestrian`
-
-## 数据集验收
-
-```bash
-python src/validate_kitti.py \
-  --dataset data/kitti/training \
-  --expected-count 1000 \
-  --debug-count 20
-```
-
-验收内容包括：
-
-- 图像、点云、标签和标定文件数量。
-- 四类文件的编号一致性。
-- KITTI 标签字段数量。
-- 二维包围框范围。
-- 三维尺寸和相机坐标。
-- 点云数据有效性。
-- 标定矩阵完整性。
-- 随机样本可视化。
-
-验收报告保存在：
-
-```text
-docs/kitti_validation_report.json
-```
-
-## 数据集说明
-
-RGB 图像配置：
-
-- 分辨率：1280×720
-- 水平视场角：90度
-- 刚性安装于 Ego Vehicle
-
-激光雷达配置：
-
-- 32线
-- 探测范围：50米
-- 点频：100000点/秒
-- 旋转频率：20Hz
-- 上视场角：10度
-- 下视场角：-30度
-
-仿真采用同步模式和固定时间步：
-
-```text
-fixed_delta_seconds = 0.05
-```
-
-对应20 FPS。
-
-## 已知限制
-
-1. KITTI `occluded` 字段暂时统一设置为3，表示未知。
-2. 项目使用单目相机，P0、P1、P2、P3采用相同的零基线投影矩阵。
-3. 二维包围框由CARLA三维包围框投影得到。
-4. 数据集用于课程学习与仿真实验，不等同于真实道路采集数据。
-
-## 参考资料
-
-- [CARLA 0.9.15 官方文档](https://carla.readthedocs.io/en/0.9.15/)
-- [CARLA Python API](https://carla.readthedocs.io/en/0.9.15/python_api/)
-- [CARLA Sensors and Data](https://carla.readthedocs.io/en/0.9.15/core_sensors/)
-- [CARLA Synchrony and Time-step](https://carla.readthedocs.io/en/0.9.15/adv_synchrony_timestep/)
-- [CARLA Bounding Boxes](https://carla.readthedocs.io/en/0.9.15/tuto_G_bounding_boxes/)
-- [KITTI Object Detection Benchmark](https://www.cvlibs.net/datasets/kitti/eval_object.php)

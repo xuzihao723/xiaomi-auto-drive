@@ -1,0 +1,8 @@
+{
+  "output": "demo\\yolov8_detection_demo_1min.mp4",
+  "frames": 1000,
+  "fps": 15.0,
+  "duration_seconds": 66.66666666666667,
+  "width": 1280,
+  "height": 720
+}

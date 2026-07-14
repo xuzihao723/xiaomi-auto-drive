@@ -1,0 +1,37 @@
+{
+  "source_images": 1000,
+  "split_mode": "random",
+  "seed": 42,
+  "splits": {
+    "train": 700,
+    "val": 150,
+    "test": 150
+  },
+  "class_counts": {
+    "Car": 3534,
+    "Pedestrian": 597,
+    "TrafficLight": 2466,
+    "TrafficSign": 51
+  },
+  "per_split_object_counts": {
+    "train": {"Car": 2481, "Pedestrian": 404, "TrafficLight": 1680, "TrafficSign": 33},
+    "val": {"Car": 551, "Pedestrian": 102, "TrafficLight": 383, "TrafficSign": 7},
+    "test": {"Car": 502, "Pedestrian": 91, "TrafficLight": 403, "TrafficSign": 11}
+  },
+  "per_split_frame_counts": {
+    "train": {"Car": 661, "Pedestrian": 351, "TrafficLight": 497, "TrafficSign": 32},
+    "val": {"Car": 140, "Pedestrian": 88, "TrafficLight": 109, "TrafficSign": 7},
+    "test": {"Car": 135, "Pedestrian": 72, "TrafficLight": 116, "TrafficSign": 10}
+  },
+  "pseudo_label_counts": {
+    "TrafficLight": 2466,
+    "TrafficSign": 51
+  },
+  "empty_label_files": 10,
+  "ignored_labels": {},
+  "pseudo_model": "yolov8n.pt",
+  "pseudo_thresholds": {
+    "TrafficLight": 0.2,
+    "TrafficSign": 0.06
+  }
+}

@@ -1,0 +1,10 @@
+path: ../data/yolo_carla
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: Car
+  1: Pedestrian
+  2: TrafficLight
+  3: TrafficSign
