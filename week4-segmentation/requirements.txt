@@ -1,0 +1,9 @@
+torch==2.10.0
+torchvision==0.25.0
+opencv-python>=4.8,<5
+numpy>=1.23
+matplotlib>=3.7,<4
+PyYAML>=6.0,<7
+tqdm>=4.65
+ultralytics>=8.2,<9
+carla==0.9.15

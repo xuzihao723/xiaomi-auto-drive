@@ -1,0 +1,1045 @@
+{
+  "name": "town05_clear_noon_train",
+  "map": "Town05",
+  "weather": "ClearNoon",
+  "seed": 401,
+  "split": "train",
+  "images": 250,
+  "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+  "class_mapping": {
+    "0": "Background",
+    "1": "DrivableArea(runtime tag=1)",
+    "2": "LaneMarking(runtime tag=24)"
+  },
+  "pixel_counts": {
+    "0": 35338512,
+    "1": 20938114,
+    "2": 1323374
+  },
+  "semantic_tag_counts": {
+    "1": 20938114,
+    "2": 2264686,
+    "3": 7478198,
+    "4": 70792,
+    "5": 1127442,
+    "6": 1688683,
+    "7": 395252,
+    "8": 1649,
+    "9": 2219191,
+    "10": 583566,
+    "11": 16544402,
+    "14": 191777,
+    "15": 1484,
+    "16": 135469,
+    "20": 132838,
+    "21": 40006,
+    "22": 1868399,
+    "24": 1323374,
+    "25": 5393,
+    "26": 210443,
+    "27": 340973,
+    "28": 37869
+  },
+  "records": [
+    {
+      "stem": "town05_clear_noon_train_00000",
+      "carla_frame": 282829
+    },
+    {
+      "stem": "town05_clear_noon_train_00001",
+      "carla_frame": 282831
+    },
+    {
+      "stem": "town05_clear_noon_train_00002",
+      "carla_frame": 282833
+    },
+    {
+      "stem": "town05_clear_noon_train_00003",
+      "carla_frame": 282835
+    },
+    {
+      "stem": "town05_clear_noon_train_00004",
+      "carla_frame": 282837
+    },
+    {
+      "stem": "town05_clear_noon_train_00005",
+      "carla_frame": 282839
+    },
+    {
+      "stem": "town05_clear_noon_train_00006",
+      "carla_frame": 282841
+    },
+    {
+      "stem": "town05_clear_noon_train_00007",
+      "carla_frame": 282843
+    },
+    {
+      "stem": "town05_clear_noon_train_00008",
+      "carla_frame": 282845
+    },
+    {
+      "stem": "town05_clear_noon_train_00009",
+      "carla_frame": 282847
+    },
+    {
+      "stem": "town05_clear_noon_train_00010",
+      "carla_frame": 282849
+    },
+    {
+      "stem": "town05_clear_noon_train_00011",
+      "carla_frame": 282851
+    },
+    {
+      "stem": "town05_clear_noon_train_00012",
+      "carla_frame": 282853
+    },
+    {
+      "stem": "town05_clear_noon_train_00013",
+      "carla_frame": 282855
+    },
+    {
+      "stem": "town05_clear_noon_train_00014",
+      "carla_frame": 282857
+    },
+    {
+      "stem": "town05_clear_noon_train_00015",
+      "carla_frame": 282859
+    },
+    {
+      "stem": "town05_clear_noon_train_00016",
+      "carla_frame": 282861
+    },
+    {
+      "stem": "town05_clear_noon_train_00017",
+      "carla_frame": 282863
+    },
+    {
+      "stem": "town05_clear_noon_train_00018",
+      "carla_frame": 282865
+    },
+    {
+      "stem": "town05_clear_noon_train_00019",
+      "carla_frame": 282867
+    },
+    {
+      "stem": "town05_clear_noon_train_00020",
+      "carla_frame": 282869
+    },
+    {
+      "stem": "town05_clear_noon_train_00021",
+      "carla_frame": 282871
+    },
+    {
+      "stem": "town05_clear_noon_train_00022",
+      "carla_frame": 282873
+    },
+    {
+      "stem": "town05_clear_noon_train_00023",
+      "carla_frame": 282875
+    },
+    {
+      "stem": "town05_clear_noon_train_00024",
+      "carla_frame": 282877
+    },
+    {
+      "stem": "town05_clear_noon_train_00025",
+      "carla_frame": 282879
+    },
+    {
+      "stem": "town05_clear_noon_train_00026",
+      "carla_frame": 282881
+    },
+    {
+      "stem": "town05_clear_noon_train_00027",
+      "carla_frame": 282883
+    },
+    {
+      "stem": "town05_clear_noon_train_00028",
+      "carla_frame": 282885
+    },
+    {
+      "stem": "town05_clear_noon_train_00029",
+      "carla_frame": 282887
+    },
+    {
+      "stem": "town05_clear_noon_train_00030",
+      "carla_frame": 282889
+    },
+    {
+      "stem": "town05_clear_noon_train_00031",
+      "carla_frame": 282891
+    },
+    {
+      "stem": "town05_clear_noon_train_00032",
+      "carla_frame": 282893
+    },
+    {
+      "stem": "town05_clear_noon_train_00033",
+      "carla_frame": 282895
+    },
+    {
+      "stem": "town05_clear_noon_train_00034",
+      "carla_frame": 282897
+    },
+    {
+      "stem": "town05_clear_noon_train_00035",
+      "carla_frame": 282899
+    },
+    {
+      "stem": "town05_clear_noon_train_00036",
+      "carla_frame": 282901
+    },
+    {
+      "stem": "town05_clear_noon_train_00037",
+      "carla_frame": 282903
+    },
+    {
+      "stem": "town05_clear_noon_train_00038",
+      "carla_frame": 282905
+    },
+    {
+      "stem": "town05_clear_noon_train_00039",
+      "carla_frame": 282907
+    },
+    {
+      "stem": "town05_clear_noon_train_00040",
+      "carla_frame": 282909
+    },
+    {
+      "stem": "town05_clear_noon_train_00041",
+      "carla_frame": 282911
+    },
+    {
+      "stem": "town05_clear_noon_train_00042",
+      "carla_frame": 282913
+    },
+    {
+      "stem": "town05_clear_noon_train_00043",
+      "carla_frame": 282915
+    },
+    {
+      "stem": "town05_clear_noon_train_00044",
+      "carla_frame": 282917
+    },
+    {
+      "stem": "town05_clear_noon_train_00045",
+      "carla_frame": 282919
+    },
+    {
+      "stem": "town05_clear_noon_train_00046",
+      "carla_frame": 282921
+    },
+    {
+      "stem": "town05_clear_noon_train_00047",
+      "carla_frame": 282923
+    },
+    {
+      "stem": "town05_clear_noon_train_00048",
+      "carla_frame": 282925
+    },
+    {
+      "stem": "town05_clear_noon_train_00049",
+      "carla_frame": 282927
+    },
+    {
+      "stem": "town05_clear_noon_train_00050",
+      "carla_frame": 282929
+    },
+    {
+      "stem": "town05_clear_noon_train_00051",
+      "carla_frame": 282931
+    },
+    {
+      "stem": "town05_clear_noon_train_00052",
+      "carla_frame": 282933
+    },
+    {
+      "stem": "town05_clear_noon_train_00053",
+      "carla_frame": 282935
+    },
+    {
+      "stem": "town05_clear_noon_train_00054",
+      "carla_frame": 282937
+    },
+    {
+      "stem": "town05_clear_noon_train_00055",
+      "carla_frame": 282939
+    },
+    {
+      "stem": "town05_clear_noon_train_00056",
+      "carla_frame": 282941
+    },
+    {
+      "stem": "town05_clear_noon_train_00057",
+      "carla_frame": 282943
+    },
+    {
+      "stem": "town05_clear_noon_train_00058",
+      "carla_frame": 282945
+    },
+    {
+      "stem": "town05_clear_noon_train_00059",
+      "carla_frame": 282947
+    },
+    {
+      "stem": "town05_clear_noon_train_00060",
+      "carla_frame": 282949
+    },
+    {
+      "stem": "town05_clear_noon_train_00061",
+      "carla_frame": 282951
+    },
+    {
+      "stem": "town05_clear_noon_train_00062",
+      "carla_frame": 282953
+    },
+    {
+      "stem": "town05_clear_noon_train_00063",
+      "carla_frame": 282955
+    },
+    {
+      "stem": "town05_clear_noon_train_00064",
+      "carla_frame": 282957
+    },
+    {
+      "stem": "town05_clear_noon_train_00065",
+      "carla_frame": 282959
+    },
+    {
+      "stem": "town05_clear_noon_train_00066",
+      "carla_frame": 282961
+    },
+    {
+      "stem": "town05_clear_noon_train_00067",
+      "carla_frame": 282963
+    },
+    {
+      "stem": "town05_clear_noon_train_00068",
+      "carla_frame": 282965
+    },
+    {
+      "stem": "town05_clear_noon_train_00069",
+      "carla_frame": 282967
+    },
+    {
+      "stem": "town05_clear_noon_train_00070",
+      "carla_frame": 282969
+    },
+    {
+      "stem": "town05_clear_noon_train_00071",
+      "carla_frame": 282971
+    },
+    {
+      "stem": "town05_clear_noon_train_00072",
+      "carla_frame": 282973
+    },
+    {
+      "stem": "town05_clear_noon_train_00073",
+      "carla_frame": 282975
+    },
+    {
+      "stem": "town05_clear_noon_train_00074",
+      "carla_frame": 282977
+    },
+    {
+      "stem": "town05_clear_noon_train_00075",
+      "carla_frame": 282979
+    },
+    {
+      "stem": "town05_clear_noon_train_00076",
+      "carla_frame": 282981
+    },
+    {
+      "stem": "town05_clear_noon_train_00077",
+      "carla_frame": 282983
+    },
+    {
+      "stem": "town05_clear_noon_train_00078",
+      "carla_frame": 282985
+    },
+    {
+      "stem": "town05_clear_noon_train_00079",
+      "carla_frame": 282987
+    },
+    {
+      "stem": "town05_clear_noon_train_00080",
+      "carla_frame": 282989
+    },
+    {
+      "stem": "town05_clear_noon_train_00081",
+      "carla_frame": 282991
+    },
+    {
+      "stem": "town05_clear_noon_train_00082",
+      "carla_frame": 282993
+    },
+    {
+      "stem": "town05_clear_noon_train_00083",
+      "carla_frame": 282995
+    },
+    {
+      "stem": "town05_clear_noon_train_00084",
+      "carla_frame": 282997
+    },
+    {
+      "stem": "town05_clear_noon_train_00085",
+      "carla_frame": 282999
+    },
+    {
+      "stem": "town05_clear_noon_train_00086",
+      "carla_frame": 283001
+    },
+    {
+      "stem": "town05_clear_noon_train_00087",
+      "carla_frame": 283003
+    },
+    {
+      "stem": "town05_clear_noon_train_00088",
+      "carla_frame": 283005
+    },
+    {
+      "stem": "town05_clear_noon_train_00089",
+      "carla_frame": 283007
+    },
+    {
+      "stem": "town05_clear_noon_train_00090",
+      "carla_frame": 283009
+    },
+    {
+      "stem": "town05_clear_noon_train_00091",
+      "carla_frame": 283011
+    },
+    {
+      "stem": "town05_clear_noon_train_00092",
+      "carla_frame": 283013
+    },
+    {
+      "stem": "town05_clear_noon_train_00093",
+      "carla_frame": 283015
+    },
+    {
+      "stem": "town05_clear_noon_train_00094",
+      "carla_frame": 283017
+    },
+    {
+      "stem": "town05_clear_noon_train_00095",
+      "carla_frame": 283019
+    },
+    {
+      "stem": "town05_clear_noon_train_00096",
+      "carla_frame": 283021
+    },
+    {
+      "stem": "town05_clear_noon_train_00097",
+      "carla_frame": 283023
+    },
+    {
+      "stem": "town05_clear_noon_train_00098",
+      "carla_frame": 283025
+    },
+    {
+      "stem": "town05_clear_noon_train_00099",
+      "carla_frame": 283027
+    },
+    {
+      "stem": "town05_clear_noon_train_00100",
+      "carla_frame": 283029
+    },
+    {
+      "stem": "town05_clear_noon_train_00101",
+      "carla_frame": 283031
+    },
+    {
+      "stem": "town05_clear_noon_train_00102",
+      "carla_frame": 283033
+    },
+    {
+      "stem": "town05_clear_noon_train_00103",
+      "carla_frame": 283035
+    },
+    {
+      "stem": "town05_clear_noon_train_00104",
+      "carla_frame": 283037
+    },
+    {
+      "stem": "town05_clear_noon_train_00105",
+      "carla_frame": 283039
+    },
+    {
+      "stem": "town05_clear_noon_train_00106",
+      "carla_frame": 283041
+    },
+    {
+      "stem": "town05_clear_noon_train_00107",
+      "carla_frame": 283043
+    },
+    {
+      "stem": "town05_clear_noon_train_00108",
+      "carla_frame": 283045
+    },
+    {
+      "stem": "town05_clear_noon_train_00109",
+      "carla_frame": 283047
+    },
+    {
+      "stem": "town05_clear_noon_train_00110",
+      "carla_frame": 283049
+    },
+    {
+      "stem": "town05_clear_noon_train_00111",
+      "carla_frame": 283051
+    },
+    {
+      "stem": "town05_clear_noon_train_00112",
+      "carla_frame": 283053
+    },
+    {
+      "stem": "town05_clear_noon_train_00113",
+      "carla_frame": 283055
+    },
+    {
+      "stem": "town05_clear_noon_train_00114",
+      "carla_frame": 283057
+    },
+    {
+      "stem": "town05_clear_noon_train_00115",
+      "carla_frame": 283059
+    },
+    {
+      "stem": "town05_clear_noon_train_00116",
+      "carla_frame": 283061
+    },
+    {
+      "stem": "town05_clear_noon_train_00117",
+      "carla_frame": 283063
+    },
+    {
+      "stem": "town05_clear_noon_train_00118",
+      "carla_frame": 283065
+    },
+    {
+      "stem": "town05_clear_noon_train_00119",
+      "carla_frame": 283067
+    },
+    {
+      "stem": "town05_clear_noon_train_00120",
+      "carla_frame": 283069
+    },
+    {
+      "stem": "town05_clear_noon_train_00121",
+      "carla_frame": 283071
+    },
+    {
+      "stem": "town05_clear_noon_train_00122",
+      "carla_frame": 283073
+    },
+    {
+      "stem": "town05_clear_noon_train_00123",
+      "carla_frame": 283075
+    },
+    {
+      "stem": "town05_clear_noon_train_00124",
+      "carla_frame": 283077
+    },
+    {
+      "stem": "town05_clear_noon_train_00125",
+      "carla_frame": 283079
+    },
+    {
+      "stem": "town05_clear_noon_train_00126",
+      "carla_frame": 283081
+    },
+    {
+      "stem": "town05_clear_noon_train_00127",
+      "carla_frame": 283083
+    },
+    {
+      "stem": "town05_clear_noon_train_00128",
+      "carla_frame": 283085
+    },
+    {
+      "stem": "town05_clear_noon_train_00129",
+      "carla_frame": 283087
+    },
+    {
+      "stem": "town05_clear_noon_train_00130",
+      "carla_frame": 283089
+    },
+    {
+      "stem": "town05_clear_noon_train_00131",
+      "carla_frame": 283091
+    },
+    {
+      "stem": "town05_clear_noon_train_00132",
+      "carla_frame": 283093
+    },
+    {
+      "stem": "town05_clear_noon_train_00133",
+      "carla_frame": 283095
+    },
+    {
+      "stem": "town05_clear_noon_train_00134",
+      "carla_frame": 283097
+    },
+    {
+      "stem": "town05_clear_noon_train_00135",
+      "carla_frame": 283099
+    },
+    {
+      "stem": "town05_clear_noon_train_00136",
+      "carla_frame": 283101
+    },
+    {
+      "stem": "town05_clear_noon_train_00137",
+      "carla_frame": 283103
+    },
+    {
+      "stem": "town05_clear_noon_train_00138",
+      "carla_frame": 283105
+    },
+    {
+      "stem": "town05_clear_noon_train_00139",
+      "carla_frame": 283107
+    },
+    {
+      "stem": "town05_clear_noon_train_00140",
+      "carla_frame": 283109
+    },
+    {
+      "stem": "town05_clear_noon_train_00141",
+      "carla_frame": 283111
+    },
+    {
+      "stem": "town05_clear_noon_train_00142",
+      "carla_frame": 283113
+    },
+    {
+      "stem": "town05_clear_noon_train_00143",
+      "carla_frame": 283115
+    },
+    {
+      "stem": "town05_clear_noon_train_00144",
+      "carla_frame": 283117
+    },
+    {
+      "stem": "town05_clear_noon_train_00145",
+      "carla_frame": 283119
+    },
+    {
+      "stem": "town05_clear_noon_train_00146",
+      "carla_frame": 283121
+    },
+    {
+      "stem": "town05_clear_noon_train_00147",
+      "carla_frame": 283123
+    },
+    {
+      "stem": "town05_clear_noon_train_00148",
+      "carla_frame": 283125
+    },
+    {
+      "stem": "town05_clear_noon_train_00149",
+      "carla_frame": 283127
+    },
+    {
+      "stem": "town05_clear_noon_train_00150",
+      "carla_frame": 283129
+    },
+    {
+      "stem": "town05_clear_noon_train_00151",
+      "carla_frame": 283131
+    },
+    {
+      "stem": "town05_clear_noon_train_00152",
+      "carla_frame": 283133
+    },
+    {
+      "stem": "town05_clear_noon_train_00153",
+      "carla_frame": 283135
+    },
+    {
+      "stem": "town05_clear_noon_train_00154",
+      "carla_frame": 283137
+    },
+    {
+      "stem": "town05_clear_noon_train_00155",
+      "carla_frame": 283139
+    },
+    {
+      "stem": "town05_clear_noon_train_00156",
+      "carla_frame": 283141
+    },
+    {
+      "stem": "town05_clear_noon_train_00157",
+      "carla_frame": 283143
+    },
+    {
+      "stem": "town05_clear_noon_train_00158",
+      "carla_frame": 283145
+    },
+    {
+      "stem": "town05_clear_noon_train_00159",
+      "carla_frame": 283147
+    },
+    {
+      "stem": "town05_clear_noon_train_00160",
+      "carla_frame": 283149
+    },
+    {
+      "stem": "town05_clear_noon_train_00161",
+      "carla_frame": 283151
+    },
+    {
+      "stem": "town05_clear_noon_train_00162",
+      "carla_frame": 283153
+    },
+    {
+      "stem": "town05_clear_noon_train_00163",
+      "carla_frame": 283155
+    },
+    {
+      "stem": "town05_clear_noon_train_00164",
+      "carla_frame": 283157
+    },
+    {
+      "stem": "town05_clear_noon_train_00165",
+      "carla_frame": 283159
+    },
+    {
+      "stem": "town05_clear_noon_train_00166",
+      "carla_frame": 283161
+    },
+    {
+      "stem": "town05_clear_noon_train_00167",
+      "carla_frame": 283163
+    },
+    {
+      "stem": "town05_clear_noon_train_00168",
+      "carla_frame": 283165
+    },
+    {
+      "stem": "town05_clear_noon_train_00169",
+      "carla_frame": 283167
+    },
+    {
+      "stem": "town05_clear_noon_train_00170",
+      "carla_frame": 283169
+    },
+    {
+      "stem": "town05_clear_noon_train_00171",
+      "carla_frame": 283171
+    },
+    {
+      "stem": "town05_clear_noon_train_00172",
+      "carla_frame": 283173
+    },
+    {
+      "stem": "town05_clear_noon_train_00173",
+      "carla_frame": 283175
+    },
+    {
+      "stem": "town05_clear_noon_train_00174",
+      "carla_frame": 283177
+    },
+    {
+      "stem": "town05_clear_noon_train_00175",
+      "carla_frame": 283179
+    },
+    {
+      "stem": "town05_clear_noon_train_00176",
+      "carla_frame": 283181
+    },
+    {
+      "stem": "town05_clear_noon_train_00177",
+      "carla_frame": 283183
+    },
+    {
+      "stem": "town05_clear_noon_train_00178",
+      "carla_frame": 283185
+    },
+    {
+      "stem": "town05_clear_noon_train_00179",
+      "carla_frame": 283187
+    },
+    {
+      "stem": "town05_clear_noon_train_00180",
+      "carla_frame": 283189
+    },
+    {
+      "stem": "town05_clear_noon_train_00181",
+      "carla_frame": 283191
+    },
+    {
+      "stem": "town05_clear_noon_train_00182",
+      "carla_frame": 283193
+    },
+    {
+      "stem": "town05_clear_noon_train_00183",
+      "carla_frame": 283195
+    },
+    {
+      "stem": "town05_clear_noon_train_00184",
+      "carla_frame": 283197
+    },
+    {
+      "stem": "town05_clear_noon_train_00185",
+      "carla_frame": 283199
+    },
+    {
+      "stem": "town05_clear_noon_train_00186",
+      "carla_frame": 283201
+    },
+    {
+      "stem": "town05_clear_noon_train_00187",
+      "carla_frame": 283203
+    },
+    {
+      "stem": "town05_clear_noon_train_00188",
+      "carla_frame": 283205
+    },
+    {
+      "stem": "town05_clear_noon_train_00189",
+      "carla_frame": 283207
+    },
+    {
+      "stem": "town05_clear_noon_train_00190",
+      "carla_frame": 283209
+    },
+    {
+      "stem": "town05_clear_noon_train_00191",
+      "carla_frame": 283211
+    },
+    {
+      "stem": "town05_clear_noon_train_00192",
+      "carla_frame": 283213
+    },
+    {
+      "stem": "town05_clear_noon_train_00193",
+      "carla_frame": 283215
+    },
+    {
+      "stem": "town05_clear_noon_train_00194",
+      "carla_frame": 283217
+    },
+    {
+      "stem": "town05_clear_noon_train_00195",
+      "carla_frame": 283219
+    },
+    {
+      "stem": "town05_clear_noon_train_00196",
+      "carla_frame": 283221
+    },
+    {
+      "stem": "town05_clear_noon_train_00197",
+      "carla_frame": 283223
+    },
+    {
+      "stem": "town05_clear_noon_train_00198",
+      "carla_frame": 283225
+    },
+    {
+      "stem": "town05_clear_noon_train_00199",
+      "carla_frame": 283227
+    },
+    {
+      "stem": "town05_clear_noon_train_00200",
+      "carla_frame": 283229
+    },
+    {
+      "stem": "town05_clear_noon_train_00201",
+      "carla_frame": 283231
+    },
+    {
+      "stem": "town05_clear_noon_train_00202",
+      "carla_frame": 283233
+    },
+    {
+      "stem": "town05_clear_noon_train_00203",
+      "carla_frame": 283235
+    },
+    {
+      "stem": "town05_clear_noon_train_00204",
+      "carla_frame": 283237
+    },
+    {
+      "stem": "town05_clear_noon_train_00205",
+      "carla_frame": 283239
+    },
+    {
+      "stem": "town05_clear_noon_train_00206",
+      "carla_frame": 283241
+    },
+    {
+      "stem": "town05_clear_noon_train_00207",
+      "carla_frame": 283243
+    },
+    {
+      "stem": "town05_clear_noon_train_00208",
+      "carla_frame": 283245
+    },
+    {
+      "stem": "town05_clear_noon_train_00209",
+      "carla_frame": 283247
+    },
+    {
+      "stem": "town05_clear_noon_train_00210",
+      "carla_frame": 283249
+    },
+    {
+      "stem": "town05_clear_noon_train_00211",
+      "carla_frame": 283251
+    },
+    {
+      "stem": "town05_clear_noon_train_00212",
+      "carla_frame": 283253
+    },
+    {
+      "stem": "town05_clear_noon_train_00213",
+      "carla_frame": 283255
+    },
+    {
+      "stem": "town05_clear_noon_train_00214",
+      "carla_frame": 283257
+    },
+    {
+      "stem": "town05_clear_noon_train_00215",
+      "carla_frame": 283259
+    },
+    {
+      "stem": "town05_clear_noon_train_00216",
+      "carla_frame": 283261
+    },
+    {
+      "stem": "town05_clear_noon_train_00217",
+      "carla_frame": 283263
+    },
+    {
+      "stem": "town05_clear_noon_train_00218",
+      "carla_frame": 283265
+    },
+    {
+      "stem": "town05_clear_noon_train_00219",
+      "carla_frame": 283267
+    },
+    {
+      "stem": "town05_clear_noon_train_00220",
+      "carla_frame": 283269
+    },
+    {
+      "stem": "town05_clear_noon_train_00221",
+      "carla_frame": 283271
+    },
+    {
+      "stem": "town05_clear_noon_train_00222",
+      "carla_frame": 283273
+    },
+    {
+      "stem": "town05_clear_noon_train_00223",
+      "carla_frame": 283275
+    },
+    {
+      "stem": "town05_clear_noon_train_00224",
+      "carla_frame": 283277
+    },
+    {
+      "stem": "town05_clear_noon_train_00225",
+      "carla_frame": 283279
+    },
+    {
+      "stem": "town05_clear_noon_train_00226",
+      "carla_frame": 283281
+    },
+    {
+      "stem": "town05_clear_noon_train_00227",
+      "carla_frame": 283283
+    },
+    {
+      "stem": "town05_clear_noon_train_00228",
+      "carla_frame": 283285
+    },
+    {
+      "stem": "town05_clear_noon_train_00229",
+      "carla_frame": 283287
+    },
+    {
+      "stem": "town05_clear_noon_train_00230",
+      "carla_frame": 283289
+    },
+    {
+      "stem": "town05_clear_noon_train_00231",
+      "carla_frame": 283291
+    },
+    {
+      "stem": "town05_clear_noon_train_00232",
+      "carla_frame": 283293
+    },
+    {
+      "stem": "town05_clear_noon_train_00233",
+      "carla_frame": 283295
+    },
+    {
+      "stem": "town05_clear_noon_train_00234",
+      "carla_frame": 283297
+    },
+    {
+      "stem": "town05_clear_noon_train_00235",
+      "carla_frame": 283299
+    },
+    {
+      "stem": "town05_clear_noon_train_00236",
+      "carla_frame": 283301
+    },
+    {
+      "stem": "town05_clear_noon_train_00237",
+      "carla_frame": 283303
+    },
+    {
+      "stem": "town05_clear_noon_train_00238",
+      "carla_frame": 283305
+    },
+    {
+      "stem": "town05_clear_noon_train_00239",
+      "carla_frame": 283307
+    },
+    {
+      "stem": "town05_clear_noon_train_00240",
+      "carla_frame": 283309
+    },
+    {
+      "stem": "town05_clear_noon_train_00241",
+      "carla_frame": 283311
+    },
+    {
+      "stem": "town05_clear_noon_train_00242",
+      "carla_frame": 283313
+    },
+    {
+      "stem": "town05_clear_noon_train_00243",
+      "carla_frame": 283315
+    },
+    {
+      "stem": "town05_clear_noon_train_00244",
+      "carla_frame": 283317
+    },
+    {
+      "stem": "town05_clear_noon_train_00245",
+      "carla_frame": 283319
+    },
+    {
+      "stem": "town05_clear_noon_train_00246",
+      "carla_frame": 283321
+    },
+    {
+      "stem": "town05_clear_noon_train_00247",
+      "carla_frame": 283323
+    },
+    {
+      "stem": "town05_clear_noon_train_00248",
+      "carla_frame": 283325
+    },
+    {
+      "stem": "town05_clear_noon_train_00249",
+      "carla_frame": 283327
+    }
+  ]
+}

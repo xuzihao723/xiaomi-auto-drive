@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": {
+    "model_output_shape": true,
+    "perfect_metric": true,
+    "drivable_polygon": true,
+    "two_lane_curves": true
+  }
+}

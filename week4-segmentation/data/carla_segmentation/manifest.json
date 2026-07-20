@@ -1,0 +1,408 @@
+{
+  "collector": "CARLA 0.9.15 synchronized RGB + semantic segmentation camera",
+  "images": 1300,
+  "splits": {
+    "train": 800,
+    "val": 250,
+    "test": 175,
+    "audit": 75
+  },
+  "scenarios": [
+    {
+      "name": "town05_clear_night_train",
+      "map": "Town05",
+      "weather": "ClearNight",
+      "seed": 408,
+      "split": "train",
+      "images": 150,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 20446384,
+        "1": 13151388,
+        "2": 962228
+      },
+      "semantic_tag_counts": {
+        "1": 13151388,
+        "2": 1211604,
+        "3": 11409088,
+        "4": 927699,
+        "5": 165748,
+        "6": 1036462,
+        "7": 337423,
+        "8": 576,
+        "9": 975106,
+        "10": 1177,
+        "11": 3578055,
+        "14": 179653,
+        "15": 7755,
+        "20": 7577,
+        "21": 3,
+        "22": 331269,
+        "24": 962228,
+        "25": 42712,
+        "26": 227127,
+        "27": 7350
+      }
+    },
+    {
+      "name": "town05_clear_noon_train",
+      "map": "Town05",
+      "weather": "ClearNoon",
+      "seed": 401,
+      "split": "train",
+      "images": 250,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 35338512,
+        "1": 20938114,
+        "2": 1323374
+      },
+      "semantic_tag_counts": {
+        "1": 20938114,
+        "2": 2264686,
+        "3": 7478198,
+        "4": 70792,
+        "5": 1127442,
+        "6": 1688683,
+        "7": 395252,
+        "8": 1649,
+        "9": 2219191,
+        "10": 583566,
+        "11": 16544402,
+        "14": 191777,
+        "15": 1484,
+        "16": 135469,
+        "20": 132838,
+        "21": 40006,
+        "22": 1868399,
+        "24": 1323374,
+        "25": 5393,
+        "26": 210443,
+        "27": 340973,
+        "28": 37869
+      }
+    },
+    {
+      "name": "town05_cloudy_night_val",
+      "map": "Town05",
+      "weather": "CloudyNight",
+      "seed": 409,
+      "split": "val",
+      "images": 75,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 11274074,
+        "1": 5745943,
+        "2": 259983
+      },
+      "semantic_tag_counts": {
+        "1": 5745943,
+        "2": 1126748,
+        "3": 1648205,
+        "4": 12267,
+        "5": 204509,
+        "6": 262721,
+        "7": 33490,
+        "8": 484,
+        "9": 1056981,
+        "10": 88364,
+        "11": 5767712,
+        "14": 378096,
+        "15": 125785,
+        "20": 23564,
+        "21": 3591,
+        "22": 404150,
+        "24": 259983,
+        "25": 383,
+        "26": 38167,
+        "27": 94034,
+        "28": 4823
+      }
+    },
+    {
+      "name": "town05_hard_rain_test",
+      "map": "Town05",
+      "weather": "HardRainNoon",
+      "seed": 406,
+      "split": "test",
+      "images": 100,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 14250087,
+        "1": 8066137,
+        "2": 723776
+      },
+      "semantic_tag_counts": {
+        "1": 8066137,
+        "2": 778290,
+        "3": 127012,
+        "4": 231099,
+        "5": 659926,
+        "6": 252287,
+        "7": 41395,
+        "8": 4563,
+        "9": 3445121,
+        "10": 174645,
+        "11": 7208277,
+        "14": 107365,
+        "15": 19675,
+        "16": 301246,
+        "22": 181703,
+        "24": 723776,
+        "26": 124,
+        "27": 478956,
+        "28": 238403
+      }
+    },
+    {
+      "name": "town05_soft_rain_val",
+      "map": "Town05",
+      "weather": "SoftRainSunset",
+      "seed": 404,
+      "split": "val",
+      "images": 100,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 14476857,
+        "1": 7459954,
+        "2": 1103189
+      },
+      "semantic_tag_counts": {
+        "1": 7459954,
+        "2": 1169724,
+        "3": 219114,
+        "4": 56991,
+        "5": 626622,
+        "6": 489844,
+        "7": 106631,
+        "8": 2271,
+        "9": 2680250,
+        "10": 267184,
+        "11": 7215779,
+        "14": 12881,
+        "22": 469139,
+        "24": 1103189,
+        "27": 784697,
+        "28": 375730
+      }
+    },
+    {
+      "name": "town05_wet_cloudy_train",
+      "map": "Town05",
+      "weather": "WetCloudyNoon",
+      "seed": 402,
+      "split": "train",
+      "images": 200,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 28952958,
+        "1": 15788671,
+        "2": 1338371
+      },
+      "semantic_tag_counts": {
+        "1": 15788671,
+        "2": 1858775,
+        "3": 4377856,
+        "4": 2987223,
+        "5": 1293667,
+        "6": 345453,
+        "8": 195,
+        "9": 630871,
+        "10": 210154,
+        "11": 7893387,
+        "14": 140161,
+        "15": 395,
+        "20": 17591,
+        "21": 102952,
+        "22": 1688216,
+        "24": 1338371,
+        "25": 9230,
+        "26": 6335732,
+        "27": 1061100
+      }
+    },
+    {
+      "name": "town10_clear_night_test",
+      "map": "Town10HD_Opt",
+      "weather": "ClearNight",
+      "seed": 407,
+      "split": "test",
+      "images": 75,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 12021109,
+        "1": 5093371,
+        "2": 165520
+      },
+      "semantic_tag_counts": {
+        "1": 5093371,
+        "2": 2085321,
+        "3": 6666622,
+        "4": 158619,
+        "5": 4167,
+        "6": 276097,
+        "7": 1444,
+        "8": 22032,
+        "9": 406318,
+        "10": 1471,
+        "11": 1118779,
+        "14": 262089,
+        "18": 47750,
+        "19": 936,
+        "20": 372803,
+        "21": 2998,
+        "22": 593652,
+        "23": 10,
+        "24": 165520,
+        "25": 1
+      }
+    },
+    {
+      "name": "town10_clear_noon_train",
+      "map": "Town10HD_Opt",
+      "weather": "ClearNoon",
+      "seed": 403,
+      "split": "train",
+      "images": 200,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 27706477,
+        "1": 15988517,
+        "2": 2385006
+      },
+      "semantic_tag_counts": {
+        "1": 15988517,
+        "2": 1693110,
+        "3": 20767211,
+        "6": 683445,
+        "7": 261017,
+        "8": 294469,
+        "9": 2349309,
+        "10": 2834,
+        "11": 183357,
+        "14": 725534,
+        "15": 4251,
+        "20": 311120,
+        "21": 13417,
+        "22": 410622,
+        "23": 375,
+        "24": 2385006,
+        "25": 6406
+      }
+    },
+    {
+      "name": "town10_cloudy_night_audit",
+      "map": "Town10HD_Opt",
+      "weather": "CloudyNight",
+      "seed": 410,
+      "split": "audit",
+      "images": 75,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 11922449,
+        "1": 5083974,
+        "2": 273577
+      },
+      "semantic_tag_counts": {
+        "1": 5083974,
+        "2": 761123,
+        "3": 4035526,
+        "6": 117847,
+        "7": 75,
+        "8": 61729,
+        "9": 6145393,
+        "10": 10267,
+        "11": 372217,
+        "14": 267111,
+        "15": 2130,
+        "20": 118792,
+        "21": 7146,
+        "22": 21981,
+        "24": 273577,
+        "25": 1112
+      }
+    },
+    {
+      "name": "town10_cloudy_val",
+      "map": "Town10HD_Opt",
+      "weather": "CloudyNoon",
+      "seed": 405,
+      "split": "val",
+      "images": 75,
+      "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+      "class_mapping": {
+        "0": "Background",
+        "1": "DrivableArea(runtime tag=1)",
+        "2": "LaneMarking(runtime tag=24)"
+      },
+      "pixel_counts": {
+        "0": 12802134,
+        "1": 4326253,
+        "2": 151613
+      },
+      "semantic_tag_counts": {
+        "1": 4326253,
+        "2": 1473422,
+        "3": 6301727,
+        "6": 150404,
+        "8": 20515,
+        "9": 859380,
+        "10": 99680,
+        "11": 441962,
+        "14": 201231,
+        "16": 2594981,
+        "18": 12634,
+        "20": 216662,
+        "21": 43958,
+        "22": 385557,
+        "23": 21,
+        "24": 151613
+      }
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "name": "town05_soft_rain_val",
+  "map": "Town05",
+  "weather": "SoftRainSunset",
+  "seed": 404,
+  "split": "val",
+  "images": 100,
+  "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+  "class_mapping": {
+    "0": "Background",
+    "1": "DrivableArea(runtime tag=1)",
+    "2": "LaneMarking(runtime tag=24)"
+  },
+  "pixel_counts": {
+    "0": 14476857,
+    "1": 7459954,
+    "2": 1103189
+  },
+  "semantic_tag_counts": {
+    "1": 7459954,
+    "2": 1169724,
+    "3": 219114,
+    "4": 56991,
+    "5": 626622,
+    "6": 489844,
+    "7": 106631,
+    "8": 2271,
+    "9": 2680250,
+    "10": 267184,
+    "11": 7215779,
+    "14": 12881,
+    "22": 469139,
+    "24": 1103189,
+    "27": 784697,
+    "28": 375730
+  },
+  "records": [
+    {
+      "stem": "town05_soft_rain_val_00000",
+      "carla_frame": 14946
+    },
+    {
+      "stem": "town05_soft_rain_val_00001",
+      "carla_frame": 14948
+    },
+    {
+      "stem": "town05_soft_rain_val_00002",
+      "carla_frame": 14950
+    },
+    {
+      "stem": "town05_soft_rain_val_00003",
+      "carla_frame": 14952
+    },
+    {
+      "stem": "town05_soft_rain_val_00004",
+      "carla_frame": 14954
+    },
+    {
+      "stem": "town05_soft_rain_val_00005",
+      "carla_frame": 14956
+    },
+    {
+      "stem": "town05_soft_rain_val_00006",
+      "carla_frame": 14958
+    },
+    {
+      "stem": "town05_soft_rain_val_00007",
+      "carla_frame": 14960
+    },
+    {
+      "stem": "town05_soft_rain_val_00008",
+      "carla_frame": 14962
+    },
+    {
+      "stem": "town05_soft_rain_val_00009",
+      "carla_frame": 14964
+    },
+    {
+      "stem": "town05_soft_rain_val_00010",
+      "carla_frame": 14966
+    },
+    {
+      "stem": "town05_soft_rain_val_00011",
+      "carla_frame": 14968
+    },
+    {
+      "stem": "town05_soft_rain_val_00012",
+      "carla_frame": 14970
+    },
+    {
+      "stem": "town05_soft_rain_val_00013",
+      "carla_frame": 14972
+    },
+    {
+      "stem": "town05_soft_rain_val_00014",
+      "carla_frame": 14974
+    },
+    {
+      "stem": "town05_soft_rain_val_00015",
+      "carla_frame": 14976
+    },
+    {
+      "stem": "town05_soft_rain_val_00016",
+      "carla_frame": 14978
+    },
+    {
+      "stem": "town05_soft_rain_val_00017",
+      "carla_frame": 14980
+    },
+    {
+      "stem": "town05_soft_rain_val_00018",
+      "carla_frame": 14982
+    },
+    {
+      "stem": "town05_soft_rain_val_00019",
+      "carla_frame": 14984
+    },
+    {
+      "stem": "town05_soft_rain_val_00020",
+      "carla_frame": 14986
+    },
+    {
+      "stem": "town05_soft_rain_val_00021",
+      "carla_frame": 14988
+    },
+    {
+      "stem": "town05_soft_rain_val_00022",
+      "carla_frame": 14990
+    },
+    {
+      "stem": "town05_soft_rain_val_00023",
+      "carla_frame": 14992
+    },
+    {
+      "stem": "town05_soft_rain_val_00024",
+      "carla_frame": 14994
+    },
+    {
+      "stem": "town05_soft_rain_val_00025",
+      "carla_frame": 14996
+    },
+    {
+      "stem": "town05_soft_rain_val_00026",
+      "carla_frame": 14998
+    },
+    {
+      "stem": "town05_soft_rain_val_00027",
+      "carla_frame": 15000
+    },
+    {
+      "stem": "town05_soft_rain_val_00028",
+      "carla_frame": 15002
+    },
+    {
+      "stem": "town05_soft_rain_val_00029",
+      "carla_frame": 15004
+    },
+    {
+      "stem": "town05_soft_rain_val_00030",
+      "carla_frame": 15006
+    },
+    {
+      "stem": "town05_soft_rain_val_00031",
+      "carla_frame": 15008
+    },
+    {
+      "stem": "town05_soft_rain_val_00032",
+      "carla_frame": 15010
+    },
+    {
+      "stem": "town05_soft_rain_val_00033",
+      "carla_frame": 15012
+    },
+    {
+      "stem": "town05_soft_rain_val_00034",
+      "carla_frame": 15014
+    },
+    {
+      "stem": "town05_soft_rain_val_00035",
+      "carla_frame": 15016
+    },
+    {
+      "stem": "town05_soft_rain_val_00036",
+      "carla_frame": 15018
+    },
+    {
+      "stem": "town05_soft_rain_val_00037",
+      "carla_frame": 15020
+    },
+    {
+      "stem": "town05_soft_rain_val_00038",
+      "carla_frame": 15022
+    },
+    {
+      "stem": "town05_soft_rain_val_00039",
+      "carla_frame": 15024
+    },
+    {
+      "stem": "town05_soft_rain_val_00040",
+      "carla_frame": 15026
+    },
+    {
+      "stem": "town05_soft_rain_val_00041",
+      "carla_frame": 15028
+    },
+    {
+      "stem": "town05_soft_rain_val_00042",
+      "carla_frame": 15030
+    },
+    {
+      "stem": "town05_soft_rain_val_00043",
+      "carla_frame": 15032
+    },
+    {
+      "stem": "town05_soft_rain_val_00044",
+      "carla_frame": 15034
+    },
+    {
+      "stem": "town05_soft_rain_val_00045",
+      "carla_frame": 15036
+    },
+    {
+      "stem": "town05_soft_rain_val_00046",
+      "carla_frame": 15038
+    },
+    {
+      "stem": "town05_soft_rain_val_00047",
+      "carla_frame": 15040
+    },
+    {
+      "stem": "town05_soft_rain_val_00048",
+      "carla_frame": 15042
+    },
+    {
+      "stem": "town05_soft_rain_val_00049",
+      "carla_frame": 15044
+    },
+    {
+      "stem": "town05_soft_rain_val_00050",
+      "carla_frame": 15046
+    },
+    {
+      "stem": "town05_soft_rain_val_00051",
+      "carla_frame": 15048
+    },
+    {
+      "stem": "town05_soft_rain_val_00052",
+      "carla_frame": 15050
+    },
+    {
+      "stem": "town05_soft_rain_val_00053",
+      "carla_frame": 15052
+    },
+    {
+      "stem": "town05_soft_rain_val_00054",
+      "carla_frame": 15054
+    },
+    {
+      "stem": "town05_soft_rain_val_00055",
+      "carla_frame": 15056
+    },
+    {
+      "stem": "town05_soft_rain_val_00056",
+      "carla_frame": 15058
+    },
+    {
+      "stem": "town05_soft_rain_val_00057",
+      "carla_frame": 15060
+    },
+    {
+      "stem": "town05_soft_rain_val_00058",
+      "carla_frame": 15062
+    },
+    {
+      "stem": "town05_soft_rain_val_00059",
+      "carla_frame": 15064
+    },
+    {
+      "stem": "town05_soft_rain_val_00060",
+      "carla_frame": 15066
+    },
+    {
+      "stem": "town05_soft_rain_val_00061",
+      "carla_frame": 15068
+    },
+    {
+      "stem": "town05_soft_rain_val_00062",
+      "carla_frame": 15070
+    },
+    {
+      "stem": "town05_soft_rain_val_00063",
+      "carla_frame": 15072
+    },
+    {
+      "stem": "town05_soft_rain_val_00064",
+      "carla_frame": 15074
+    },
+    {
+      "stem": "town05_soft_rain_val_00065",
+      "carla_frame": 15076
+    },
+    {
+      "stem": "town05_soft_rain_val_00066",
+      "carla_frame": 15078
+    },
+    {
+      "stem": "town05_soft_rain_val_00067",
+      "carla_frame": 15080
+    },
+    {
+      "stem": "town05_soft_rain_val_00068",
+      "carla_frame": 15082
+    },
+    {
+      "stem": "town05_soft_rain_val_00069",
+      "carla_frame": 15084
+    },
+    {
+      "stem": "town05_soft_rain_val_00070",
+      "carla_frame": 15086
+    },
+    {
+      "stem": "town05_soft_rain_val_00071",
+      "carla_frame": 15088
+    },
+    {
+      "stem": "town05_soft_rain_val_00072",
+      "carla_frame": 15090
+    },
+    {
+      "stem": "town05_soft_rain_val_00073",
+      "carla_frame": 15092
+    },
+    {
+      "stem": "town05_soft_rain_val_00074",
+      "carla_frame": 15094
+    },
+    {
+      "stem": "town05_soft_rain_val_00075",
+      "carla_frame": 15096
+    },
+    {
+      "stem": "town05_soft_rain_val_00076",
+      "carla_frame": 15098
+    },
+    {
+      "stem": "town05_soft_rain_val_00077",
+      "carla_frame": 15100
+    },
+    {
+      "stem": "town05_soft_rain_val_00078",
+      "carla_frame": 15102
+    },
+    {
+      "stem": "town05_soft_rain_val_00079",
+      "carla_frame": 15104
+    },
+    {
+      "stem": "town05_soft_rain_val_00080",
+      "carla_frame": 15106
+    },
+    {
+      "stem": "town05_soft_rain_val_00081",
+      "carla_frame": 15108
+    },
+    {
+      "stem": "town05_soft_rain_val_00082",
+      "carla_frame": 15110
+    },
+    {
+      "stem": "town05_soft_rain_val_00083",
+      "carla_frame": 15112
+    },
+    {
+      "stem": "town05_soft_rain_val_00084",
+      "carla_frame": 15114
+    },
+    {
+      "stem": "town05_soft_rain_val_00085",
+      "carla_frame": 15116
+    },
+    {
+      "stem": "town05_soft_rain_val_00086",
+      "carla_frame": 15118
+    },
+    {
+      "stem": "town05_soft_rain_val_00087",
+      "carla_frame": 15120
+    },
+    {
+      "stem": "town05_soft_rain_val_00088",
+      "carla_frame": 15122
+    },
+    {
+      "stem": "town05_soft_rain_val_00089",
+      "carla_frame": 15124
+    },
+    {
+      "stem": "town05_soft_rain_val_00090",
+      "carla_frame": 15126
+    },
+    {
+      "stem": "town05_soft_rain_val_00091",
+      "carla_frame": 15128
+    },
+    {
+      "stem": "town05_soft_rain_val_00092",
+      "carla_frame": 15130
+    },
+    {
+      "stem": "town05_soft_rain_val_00093",
+      "carla_frame": 15132
+    },
+    {
+      "stem": "town05_soft_rain_val_00094",
+      "carla_frame": 15134
+    },
+    {
+      "stem": "town05_soft_rain_val_00095",
+      "carla_frame": 15136
+    },
+    {
+      "stem": "town05_soft_rain_val_00096",
+      "carla_frame": 15138
+    },
+    {
+      "stem": "town05_soft_rain_val_00097",
+      "carla_frame": 15140
+    },
+    {
+      "stem": "town05_soft_rain_val_00098",
+      "carla_frame": 15142
+    },
+    {
+      "stem": "town05_soft_rain_val_00099",
+      "carla_frame": 15144
+    }
+  ]
+}

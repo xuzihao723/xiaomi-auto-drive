@@ -1,0 +1,339 @@
+{
+  "name": "town10_cloudy_val",
+  "map": "Town10HD_Opt",
+  "weather": "CloudyNoon",
+  "seed": 405,
+  "split": "val",
+  "images": 75,
+  "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+  "class_mapping": {
+    "0": "Background",
+    "1": "DrivableArea(runtime tag=1)",
+    "2": "LaneMarking(runtime tag=24)"
+  },
+  "pixel_counts": {
+    "0": 12802134,
+    "1": 4326253,
+    "2": 151613
+  },
+  "semantic_tag_counts": {
+    "1": 4326253,
+    "2": 1473422,
+    "3": 6301727,
+    "6": 150404,
+    "8": 20515,
+    "9": 859380,
+    "10": 99680,
+    "11": 441962,
+    "14": 201231,
+    "16": 2594981,
+    "18": 12634,
+    "20": 216662,
+    "21": 43958,
+    "22": 385557,
+    "23": 21,
+    "24": 151613
+  },
+  "records": [
+    {
+      "stem": "town10_cloudy_val_00000",
+      "carla_frame": 3758
+    },
+    {
+      "stem": "town10_cloudy_val_00001",
+      "carla_frame": 3760
+    },
+    {
+      "stem": "town10_cloudy_val_00002",
+      "carla_frame": 3762
+    },
+    {
+      "stem": "town10_cloudy_val_00003",
+      "carla_frame": 3764
+    },
+    {
+      "stem": "town10_cloudy_val_00004",
+      "carla_frame": 3766
+    },
+    {
+      "stem": "town10_cloudy_val_00005",
+      "carla_frame": 3768
+    },
+    {
+      "stem": "town10_cloudy_val_00006",
+      "carla_frame": 3770
+    },
+    {
+      "stem": "town10_cloudy_val_00007",
+      "carla_frame": 3772
+    },
+    {
+      "stem": "town10_cloudy_val_00008",
+      "carla_frame": 3774
+    },
+    {
+      "stem": "town10_cloudy_val_00009",
+      "carla_frame": 3776
+    },
+    {
+      "stem": "town10_cloudy_val_00010",
+      "carla_frame": 3778
+    },
+    {
+      "stem": "town10_cloudy_val_00011",
+      "carla_frame": 3780
+    },
+    {
+      "stem": "town10_cloudy_val_00012",
+      "carla_frame": 3782
+    },
+    {
+      "stem": "town10_cloudy_val_00013",
+      "carla_frame": 3784
+    },
+    {
+      "stem": "town10_cloudy_val_00014",
+      "carla_frame": 3786
+    },
+    {
+      "stem": "town10_cloudy_val_00015",
+      "carla_frame": 3788
+    },
+    {
+      "stem": "town10_cloudy_val_00016",
+      "carla_frame": 3790
+    },
+    {
+      "stem": "town10_cloudy_val_00017",
+      "carla_frame": 3792
+    },
+    {
+      "stem": "town10_cloudy_val_00018",
+      "carla_frame": 3794
+    },
+    {
+      "stem": "town10_cloudy_val_00019",
+      "carla_frame": 3796
+    },
+    {
+      "stem": "town10_cloudy_val_00020",
+      "carla_frame": 3798
+    },
+    {
+      "stem": "town10_cloudy_val_00021",
+      "carla_frame": 3800
+    },
+    {
+      "stem": "town10_cloudy_val_00022",
+      "carla_frame": 3802
+    },
+    {
+      "stem": "town10_cloudy_val_00023",
+      "carla_frame": 3804
+    },
+    {
+      "stem": "town10_cloudy_val_00024",
+      "carla_frame": 3806
+    },
+    {
+      "stem": "town10_cloudy_val_00025",
+      "carla_frame": 3808
+    },
+    {
+      "stem": "town10_cloudy_val_00026",
+      "carla_frame": 3810
+    },
+    {
+      "stem": "town10_cloudy_val_00027",
+      "carla_frame": 3812
+    },
+    {
+      "stem": "town10_cloudy_val_00028",
+      "carla_frame": 3814
+    },
+    {
+      "stem": "town10_cloudy_val_00029",
+      "carla_frame": 3816
+    },
+    {
+      "stem": "town10_cloudy_val_00030",
+      "carla_frame": 3818
+    },
+    {
+      "stem": "town10_cloudy_val_00031",
+      "carla_frame": 3820
+    },
+    {
+      "stem": "town10_cloudy_val_00032",
+      "carla_frame": 3822
+    },
+    {
+      "stem": "town10_cloudy_val_00033",
+      "carla_frame": 3824
+    },
+    {
+      "stem": "town10_cloudy_val_00034",
+      "carla_frame": 3826
+    },
+    {
+      "stem": "town10_cloudy_val_00035",
+      "carla_frame": 3828
+    },
+    {
+      "stem": "town10_cloudy_val_00036",
+      "carla_frame": 3830
+    },
+    {
+      "stem": "town10_cloudy_val_00037",
+      "carla_frame": 3832
+    },
+    {
+      "stem": "town10_cloudy_val_00038",
+      "carla_frame": 3834
+    },
+    {
+      "stem": "town10_cloudy_val_00039",
+      "carla_frame": 3836
+    },
+    {
+      "stem": "town10_cloudy_val_00040",
+      "carla_frame": 3838
+    },
+    {
+      "stem": "town10_cloudy_val_00041",
+      "carla_frame": 3840
+    },
+    {
+      "stem": "town10_cloudy_val_00042",
+      "carla_frame": 3842
+    },
+    {
+      "stem": "town10_cloudy_val_00043",
+      "carla_frame": 3844
+    },
+    {
+      "stem": "town10_cloudy_val_00044",
+      "carla_frame": 3846
+    },
+    {
+      "stem": "town10_cloudy_val_00045",
+      "carla_frame": 3848
+    },
+    {
+      "stem": "town10_cloudy_val_00046",
+      "carla_frame": 3850
+    },
+    {
+      "stem": "town10_cloudy_val_00047",
+      "carla_frame": 3852
+    },
+    {
+      "stem": "town10_cloudy_val_00048",
+      "carla_frame": 3854
+    },
+    {
+      "stem": "town10_cloudy_val_00049",
+      "carla_frame": 3856
+    },
+    {
+      "stem": "town10_cloudy_val_00050",
+      "carla_frame": 3858
+    },
+    {
+      "stem": "town10_cloudy_val_00051",
+      "carla_frame": 3860
+    },
+    {
+      "stem": "town10_cloudy_val_00052",
+      "carla_frame": 3862
+    },
+    {
+      "stem": "town10_cloudy_val_00053",
+      "carla_frame": 3864
+    },
+    {
+      "stem": "town10_cloudy_val_00054",
+      "carla_frame": 3866
+    },
+    {
+      "stem": "town10_cloudy_val_00055",
+      "carla_frame": 3868
+    },
+    {
+      "stem": "town10_cloudy_val_00056",
+      "carla_frame": 3870
+    },
+    {
+      "stem": "town10_cloudy_val_00057",
+      "carla_frame": 3872
+    },
+    {
+      "stem": "town10_cloudy_val_00058",
+      "carla_frame": 3874
+    },
+    {
+      "stem": "town10_cloudy_val_00059",
+      "carla_frame": 3876
+    },
+    {
+      "stem": "town10_cloudy_val_00060",
+      "carla_frame": 3878
+    },
+    {
+      "stem": "town10_cloudy_val_00061",
+      "carla_frame": 3880
+    },
+    {
+      "stem": "town10_cloudy_val_00062",
+      "carla_frame": 3882
+    },
+    {
+      "stem": "town10_cloudy_val_00063",
+      "carla_frame": 3884
+    },
+    {
+      "stem": "town10_cloudy_val_00064",
+      "carla_frame": 3886
+    },
+    {
+      "stem": "town10_cloudy_val_00065",
+      "carla_frame": 3888
+    },
+    {
+      "stem": "town10_cloudy_val_00066",
+      "carla_frame": 3890
+    },
+    {
+      "stem": "town10_cloudy_val_00067",
+      "carla_frame": 3892
+    },
+    {
+      "stem": "town10_cloudy_val_00068",
+      "carla_frame": 3894
+    },
+    {
+      "stem": "town10_cloudy_val_00069",
+      "carla_frame": 3896
+    },
+    {
+      "stem": "town10_cloudy_val_00070",
+      "carla_frame": 3898
+    },
+    {
+      "stem": "town10_cloudy_val_00071",
+      "carla_frame": 3900
+    },
+    {
+      "stem": "town10_cloudy_val_00072",
+      "carla_frame": 3902
+    },
+    {
+      "stem": "town10_cloudy_val_00073",
+      "carla_frame": 3904
+    },
+    {
+      "stem": "town10_cloudy_val_00074",
+      "carla_frame": 3906
+    }
+  ]
+}

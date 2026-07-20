@@ -1,0 +1,35 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "weights/unet_week4_best.pt",
+      "bytes": 31115187,
+      "sha256": "C6DE4009AF1BBE439267A74366081C43B964AA00B2B92206CCCB22D40F231DBA"
+    },
+    {
+      "path": "demo/week4_integrated_perception_1min.mp4",
+      "bytes": 10475093,
+      "sha256": "A53E50E3040A9D932D844DE85520B9D3E9B19E12D97F5540F87960588FECFD52"
+    },
+    {
+      "path": "reports/dataset_validation.json",
+      "bytes": 914,
+      "sha256": "82391334D5E34486CBEA6F1147695F40080BDCE065FC7BBA0DE61D9EEB6E3B37"
+    },
+    {
+      "path": "reports/test_evaluation_night_adapt/test_metrics.json",
+      "bytes": 2122,
+      "sha256": "A0E07FD895250CABF772BFDDC63C1D88D49196F780AB18984ED38C585004D438"
+    },
+    {
+      "path": "reports/audit_evaluation/audit_metrics.json",
+      "bytes": 1496,
+      "sha256": "9743A27249B6FECB46FD1AEE850101C7D875E6BD5A2B7528FDC08897504B3502"
+    },
+    {
+      "path": "reports/第四周实验报告.pdf",
+      "bytes": 4129722,
+      "sha256": "43158FFD4E921CC316774A57474D3317D2C8F1C6B44928CFA42C614B3A37FA42"
+    }
+  ]
+}

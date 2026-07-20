@@ -1,0 +1,12 @@
+{
+  "file": "demo/week4_integrated_perception_1min.mp4",
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "width": 640,
+  "height": 360,
+  "fps": 15,
+  "frames": 900,
+  "duration_seconds": 60.0,
+  "bytes": 10475093,
+  "validated_with": "ffprobe"
+}

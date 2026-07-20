@@ -1,0 +1,81 @@
+{
+  "split": "audit",
+  "samples": 75,
+  "weights": "/mnt/e/Users/xiaomi_codex/xiaomi_week4/weights/unet_week4_best.pt",
+  "checkpoint_epoch": 30,
+  "device": "cuda",
+  "image_size": [
+    640,
+    360
+  ],
+  "classes": [
+    "Background",
+    "DrivableArea",
+    "LaneMarking"
+  ],
+  "overall": {
+    "pixel_accuracy": 0.9604004050925926,
+    "per_class_iou": [
+      0.9498488444036867,
+      0.877213462372194,
+      0.7147849407152896
+    ],
+    "per_class_dice": [
+      0.9742794649235229,
+      0.9345910627166272,
+      0.8336729857414432
+    ],
+    "mean_iou_road_lane": 0.7959992015437418,
+    "confusion_matrix": [
+      [
+        11672057,
+        237368,
+        13024
+      ],
+      [
+        349708,
+        4680054,
+        54212
+      ],
+      [
+        16174,
+        13795,
+        243608
+      ]
+    ]
+  },
+  "by_scenario": {
+    "town10_cloudy_night_audit": {
+      "pixel_accuracy": 0.9604004050925926,
+      "per_class_iou": [
+        0.9498488444036867,
+        0.877213462372194,
+        0.7147849407152896
+      ],
+      "per_class_dice": [
+        0.9742794649235229,
+        0.9345910627166272,
+        0.8336729857414432
+      ],
+      "mean_iou_road_lane": 0.7959992015437418,
+      "confusion_matrix": [
+        [
+          11672057,
+          237368,
+          13024
+        ],
+        [
+          349708,
+          4680054,
+          54212
+        ],
+        [
+          16174,
+          13795,
+          243608
+        ]
+      ]
+    }
+  },
+  "preview_count": 8
+}

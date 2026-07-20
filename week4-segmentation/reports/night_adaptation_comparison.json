@@ -1,0 +1,67 @@
+{
+  "test_samples": 175,
+  "before_weights": "/mnt/e/Users/xiaomi_codex/xiaomi_week4/runs/unet_final/best.pt",
+  "after_weights": "/mnt/e/Users/xiaomi_codex/xiaomi_week4/runs/unet_night_adapt/best.pt",
+  "overall": {
+    "before": {
+      "pixel_accuracy": 0.802212003968254,
+      "road_iou": 0.46708804467178344,
+      "lane_iou": 0.4939903985192897,
+      "road_lane_miou": 0.4805392215955366
+    },
+    "after": {
+      "pixel_accuracy": 0.9011113343253968,
+      "road_iou": 0.7490658946540659,
+      "lane_iou": 0.6028615160486182,
+      "road_lane_miou": 0.6759637053513421
+    },
+    "delta": {
+      "pixel_accuracy": 0.09889933035714282,
+      "road_iou": 0.2819778499822825,
+      "lane_iou": 0.10887111752932843,
+      "road_lane_miou": 0.1954244837558055
+    }
+  },
+  "by_scenario": {
+    "town05_hard_rain_test": {
+      "before": {
+        "pixel_accuracy": 0.8820371961805555,
+        "road_iou": 0.7223071371906968,
+        "lane_iou": 0.5962412860098679,
+        "road_lane_miou": 0.6592742116002823
+      },
+      "after": {
+        "pixel_accuracy": 0.871094921875,
+        "road_iou": 0.7036998793437762,
+        "lane_iou": 0.5694149131167974,
+        "road_lane_miou": 0.6365573962302868
+      },
+      "delta": {
+        "pixel_accuracy": -0.0109422743055555,
+        "road_iou": -0.018607257846920633,
+        "lane_iou": -0.02682637289307055,
+        "road_lane_miou": -0.02271681536999548
+      }
+    },
+    "town10_clear_night_test": {
+      "before": {
+        "pixel_accuracy": 0.6957784143518518,
+        "road_iou": 0.00010970774171618234,
+        "lane_iou": 0.008820686321894635,
+        "road_lane_miou": 0.004465197031805409
+      },
+      "after": {
+        "pixel_accuracy": 0.9411332175925926,
+        "road_iou": 0.8243421954174075,
+        "lane_iou": 0.7315093189910008,
+        "road_lane_miou": 0.7779257572042042
+      },
+      "delta": {
+        "pixel_accuracy": 0.24535480324074077,
+        "road_iou": 0.8242324876756913,
+        "lane_iou": 0.7226886326691062,
+        "road_lane_miou": 0.7734605601723988
+      }
+    }
+  }
+}

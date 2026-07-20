@@ -1,0 +1,442 @@
+{
+  "name": "town05_hard_rain_test",
+  "map": "Town05",
+  "weather": "HardRainNoon",
+  "seed": 406,
+  "split": "test",
+  "images": 100,
+  "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+  "class_mapping": {
+    "0": "Background",
+    "1": "DrivableArea(runtime tag=1)",
+    "2": "LaneMarking(runtime tag=24)"
+  },
+  "pixel_counts": {
+    "0": 14250087,
+    "1": 8066137,
+    "2": 723776
+  },
+  "semantic_tag_counts": {
+    "1": 8066137,
+    "2": 778290,
+    "3": 127012,
+    "4": 231099,
+    "5": 659926,
+    "6": 252287,
+    "7": 41395,
+    "8": 4563,
+    "9": 3445121,
+    "10": 174645,
+    "11": 7208277,
+    "14": 107365,
+    "15": 19675,
+    "16": 301246,
+    "22": 181703,
+    "24": 723776,
+    "26": 124,
+    "27": 478956,
+    "28": 238403
+  },
+  "records": [
+    {
+      "stem": "town05_hard_rain_test_00000",
+      "carla_frame": 15175
+    },
+    {
+      "stem": "town05_hard_rain_test_00001",
+      "carla_frame": 15177
+    },
+    {
+      "stem": "town05_hard_rain_test_00002",
+      "carla_frame": 15179
+    },
+    {
+      "stem": "town05_hard_rain_test_00003",
+      "carla_frame": 15181
+    },
+    {
+      "stem": "town05_hard_rain_test_00004",
+      "carla_frame": 15183
+    },
+    {
+      "stem": "town05_hard_rain_test_00005",
+      "carla_frame": 15185
+    },
+    {
+      "stem": "town05_hard_rain_test_00006",
+      "carla_frame": 15187
+    },
+    {
+      "stem": "town05_hard_rain_test_00007",
+      "carla_frame": 15189
+    },
+    {
+      "stem": "town05_hard_rain_test_00008",
+      "carla_frame": 15191
+    },
+    {
+      "stem": "town05_hard_rain_test_00009",
+      "carla_frame": 15193
+    },
+    {
+      "stem": "town05_hard_rain_test_00010",
+      "carla_frame": 15195
+    },
+    {
+      "stem": "town05_hard_rain_test_00011",
+      "carla_frame": 15197
+    },
+    {
+      "stem": "town05_hard_rain_test_00012",
+      "carla_frame": 15199
+    },
+    {
+      "stem": "town05_hard_rain_test_00013",
+      "carla_frame": 15201
+    },
+    {
+      "stem": "town05_hard_rain_test_00014",
+      "carla_frame": 15203
+    },
+    {
+      "stem": "town05_hard_rain_test_00015",
+      "carla_frame": 15205
+    },
+    {
+      "stem": "town05_hard_rain_test_00016",
+      "carla_frame": 15207
+    },
+    {
+      "stem": "town05_hard_rain_test_00017",
+      "carla_frame": 15209
+    },
+    {
+      "stem": "town05_hard_rain_test_00018",
+      "carla_frame": 15211
+    },
+    {
+      "stem": "town05_hard_rain_test_00019",
+      "carla_frame": 15213
+    },
+    {
+      "stem": "town05_hard_rain_test_00020",
+      "carla_frame": 15215
+    },
+    {
+      "stem": "town05_hard_rain_test_00021",
+      "carla_frame": 15217
+    },
+    {
+      "stem": "town05_hard_rain_test_00022",
+      "carla_frame": 15219
+    },
+    {
+      "stem": "town05_hard_rain_test_00023",
+      "carla_frame": 15221
+    },
+    {
+      "stem": "town05_hard_rain_test_00024",
+      "carla_frame": 15223
+    },
+    {
+      "stem": "town05_hard_rain_test_00025",
+      "carla_frame": 15225
+    },
+    {
+      "stem": "town05_hard_rain_test_00026",
+      "carla_frame": 15227
+    },
+    {
+      "stem": "town05_hard_rain_test_00027",
+      "carla_frame": 15229
+    },
+    {
+      "stem": "town05_hard_rain_test_00028",
+      "carla_frame": 15231
+    },
+    {
+      "stem": "town05_hard_rain_test_00029",
+      "carla_frame": 15233
+    },
+    {
+      "stem": "town05_hard_rain_test_00030",
+      "carla_frame": 15235
+    },
+    {
+      "stem": "town05_hard_rain_test_00031",
+      "carla_frame": 15237
+    },
+    {
+      "stem": "town05_hard_rain_test_00032",
+      "carla_frame": 15239
+    },
+    {
+      "stem": "town05_hard_rain_test_00033",
+      "carla_frame": 15241
+    },
+    {
+      "stem": "town05_hard_rain_test_00034",
+      "carla_frame": 15243
+    },
+    {
+      "stem": "town05_hard_rain_test_00035",
+      "carla_frame": 15245
+    },
+    {
+      "stem": "town05_hard_rain_test_00036",
+      "carla_frame": 15247
+    },
+    {
+      "stem": "town05_hard_rain_test_00037",
+      "carla_frame": 15249
+    },
+    {
+      "stem": "town05_hard_rain_test_00038",
+      "carla_frame": 15251
+    },
+    {
+      "stem": "town05_hard_rain_test_00039",
+      "carla_frame": 15253
+    },
+    {
+      "stem": "town05_hard_rain_test_00040",
+      "carla_frame": 15255
+    },
+    {
+      "stem": "town05_hard_rain_test_00041",
+      "carla_frame": 15257
+    },
+    {
+      "stem": "town05_hard_rain_test_00042",
+      "carla_frame": 15259
+    },
+    {
+      "stem": "town05_hard_rain_test_00043",
+      "carla_frame": 15261
+    },
+    {
+      "stem": "town05_hard_rain_test_00044",
+      "carla_frame": 15263
+    },
+    {
+      "stem": "town05_hard_rain_test_00045",
+      "carla_frame": 15265
+    },
+    {
+      "stem": "town05_hard_rain_test_00046",
+      "carla_frame": 15267
+    },
+    {
+      "stem": "town05_hard_rain_test_00047",
+      "carla_frame": 15269
+    },
+    {
+      "stem": "town05_hard_rain_test_00048",
+      "carla_frame": 15271
+    },
+    {
+      "stem": "town05_hard_rain_test_00049",
+      "carla_frame": 15273
+    },
+    {
+      "stem": "town05_hard_rain_test_00050",
+      "carla_frame": 15275
+    },
+    {
+      "stem": "town05_hard_rain_test_00051",
+      "carla_frame": 15277
+    },
+    {
+      "stem": "town05_hard_rain_test_00052",
+      "carla_frame": 15279
+    },
+    {
+      "stem": "town05_hard_rain_test_00053",
+      "carla_frame": 15281
+    },
+    {
+      "stem": "town05_hard_rain_test_00054",
+      "carla_frame": 15283
+    },
+    {
+      "stem": "town05_hard_rain_test_00055",
+      "carla_frame": 15285
+    },
+    {
+      "stem": "town05_hard_rain_test_00056",
+      "carla_frame": 15287
+    },
+    {
+      "stem": "town05_hard_rain_test_00057",
+      "carla_frame": 15289
+    },
+    {
+      "stem": "town05_hard_rain_test_00058",
+      "carla_frame": 15291
+    },
+    {
+      "stem": "town05_hard_rain_test_00059",
+      "carla_frame": 15293
+    },
+    {
+      "stem": "town05_hard_rain_test_00060",
+      "carla_frame": 15295
+    },
+    {
+      "stem": "town05_hard_rain_test_00061",
+      "carla_frame": 15297
+    },
+    {
+      "stem": "town05_hard_rain_test_00062",
+      "carla_frame": 15299
+    },
+    {
+      "stem": "town05_hard_rain_test_00063",
+      "carla_frame": 15301
+    },
+    {
+      "stem": "town05_hard_rain_test_00064",
+      "carla_frame": 15303
+    },
+    {
+      "stem": "town05_hard_rain_test_00065",
+      "carla_frame": 15305
+    },
+    {
+      "stem": "town05_hard_rain_test_00066",
+      "carla_frame": 15307
+    },
+    {
+      "stem": "town05_hard_rain_test_00067",
+      "carla_frame": 15309
+    },
+    {
+      "stem": "town05_hard_rain_test_00068",
+      "carla_frame": 15311
+    },
+    {
+      "stem": "town05_hard_rain_test_00069",
+      "carla_frame": 15313
+    },
+    {
+      "stem": "town05_hard_rain_test_00070",
+      "carla_frame": 15315
+    },
+    {
+      "stem": "town05_hard_rain_test_00071",
+      "carla_frame": 15317
+    },
+    {
+      "stem": "town05_hard_rain_test_00072",
+      "carla_frame": 15319
+    },
+    {
+      "stem": "town05_hard_rain_test_00073",
+      "carla_frame": 15321
+    },
+    {
+      "stem": "town05_hard_rain_test_00074",
+      "carla_frame": 15323
+    },
+    {
+      "stem": "town05_hard_rain_test_00075",
+      "carla_frame": 15325
+    },
+    {
+      "stem": "town05_hard_rain_test_00076",
+      "carla_frame": 15327
+    },
+    {
+      "stem": "town05_hard_rain_test_00077",
+      "carla_frame": 15329
+    },
+    {
+      "stem": "town05_hard_rain_test_00078",
+      "carla_frame": 15331
+    },
+    {
+      "stem": "town05_hard_rain_test_00079",
+      "carla_frame": 15333
+    },
+    {
+      "stem": "town05_hard_rain_test_00080",
+      "carla_frame": 15335
+    },
+    {
+      "stem": "town05_hard_rain_test_00081",
+      "carla_frame": 15337
+    },
+    {
+      "stem": "town05_hard_rain_test_00082",
+      "carla_frame": 15339
+    },
+    {
+      "stem": "town05_hard_rain_test_00083",
+      "carla_frame": 15341
+    },
+    {
+      "stem": "town05_hard_rain_test_00084",
+      "carla_frame": 15343
+    },
+    {
+      "stem": "town05_hard_rain_test_00085",
+      "carla_frame": 15345
+    },
+    {
+      "stem": "town05_hard_rain_test_00086",
+      "carla_frame": 15347
+    },
+    {
+      "stem": "town05_hard_rain_test_00087",
+      "carla_frame": 15349
+    },
+    {
+      "stem": "town05_hard_rain_test_00088",
+      "carla_frame": 15351
+    },
+    {
+      "stem": "town05_hard_rain_test_00089",
+      "carla_frame": 15353
+    },
+    {
+      "stem": "town05_hard_rain_test_00090",
+      "carla_frame": 15355
+    },
+    {
+      "stem": "town05_hard_rain_test_00091",
+      "carla_frame": 15357
+    },
+    {
+      "stem": "town05_hard_rain_test_00092",
+      "carla_frame": 15359
+    },
+    {
+      "stem": "town05_hard_rain_test_00093",
+      "carla_frame": 15361
+    },
+    {
+      "stem": "town05_hard_rain_test_00094",
+      "carla_frame": 15363
+    },
+    {
+      "stem": "town05_hard_rain_test_00095",
+      "carla_frame": 15365
+    },
+    {
+      "stem": "town05_hard_rain_test_00096",
+      "carla_frame": 15367
+    },
+    {
+      "stem": "town05_hard_rain_test_00097",
+      "carla_frame": 15369
+    },
+    {
+      "stem": "town05_hard_rain_test_00098",
+      "carla_frame": 15371
+    },
+    {
+      "stem": "town05_hard_rain_test_00099",
+      "carla_frame": 15373
+    }
+  ]
+}

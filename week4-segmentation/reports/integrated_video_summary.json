@@ -1,0 +1,21 @@
+{
+  "output": "demo/week4_integrated_perception_1min.mp4",
+  "frames": 900,
+  "fps": 15.0,
+  "duration_seconds": 60.0,
+  "resolution": [
+    640,
+    360
+  ],
+  "segmentation_weights": "weights/unet_week4_best.pt",
+  "road_user_weights": "../xiaomi_week3/weights/road_user_best.pt",
+  "traffic_control_weights": "../xiaomi_week3/weights/traffic_control_best.pt",
+  "detections": {
+    "Car": 462,
+    "Pedestrian": 5,
+    "TrafficLight": 3157,
+    "TrafficSign": 37
+  },
+  "frames_with_drivable_polygon": 900,
+  "fitted_lane_curves": 1662
+}

@@ -1,0 +1,110 @@
+{
+  "image_width": 640,
+  "image_height": 360,
+  "camera_fov": 90.0,
+  "fixed_delta_seconds": 0.05,
+  "capture_stride": 2,
+  "warmup_frames": 20,
+  "npc_vehicles": 45,
+  "classes": {
+    "0": "Background",
+    "1": "DrivableArea",
+    "2": "LaneMarking"
+  },
+  "carla_semantic_mapping": {
+    "1": 1,
+    "24": 2
+  },
+  "scenarios": [
+    {
+      "name": "town05_clear_noon_train",
+      "map": "Town05",
+      "weather": "ClearNoon",
+      "seed": 401,
+      "ego_spawn_index": 116,
+      "split": "train",
+      "frames": 250
+    },
+    {
+      "name": "town05_wet_cloudy_train",
+      "map": "Town05",
+      "weather": "WetCloudyNoon",
+      "seed": 402,
+      "ego_spawn_index": 16,
+      "split": "train",
+      "frames": 200
+    },
+    {
+      "name": "town05_soft_rain_val",
+      "map": "Town05",
+      "weather": "SoftRainSunset",
+      "seed": 404,
+      "ego_spawn_index": 224,
+      "split": "val",
+      "frames": 100
+    },
+    {
+      "name": "town05_hard_rain_test",
+      "map": "Town05",
+      "weather": "HardRainNoon",
+      "seed": 406,
+      "ego_spawn_index": 23,
+      "split": "test",
+      "frames": 100
+    },
+    {
+      "name": "town05_clear_night_train",
+      "map": "Town05",
+      "weather": "ClearNight",
+      "seed": 408,
+      "ego_spawn_index": 64,
+      "split": "train",
+      "frames": 150
+    },
+    {
+      "name": "town05_cloudy_night_val",
+      "map": "Town05",
+      "weather": "CloudyNight",
+      "seed": 409,
+      "ego_spawn_index": 180,
+      "split": "val",
+      "frames": 75
+    },
+    {
+      "name": "town10_clear_noon_train",
+      "map": "Town10HD_Opt",
+      "weather": "ClearNoon",
+      "seed": 403,
+      "ego_spawn_index": 0,
+      "split": "train",
+      "frames": 200
+    },
+    {
+      "name": "town10_cloudy_val",
+      "map": "Town10HD_Opt",
+      "weather": "CloudyNoon",
+      "seed": 405,
+      "ego_spawn_index": 10,
+      "split": "val",
+      "frames": 75
+    },
+    {
+      "name": "town10_clear_night_test",
+      "map": "Town10HD_Opt",
+      "weather": "ClearNight",
+      "seed": 407,
+      "ego_spawn_index": 20,
+      "split": "test",
+      "frames": 75
+    },
+    {
+      "name": "town10_cloudy_night_audit",
+      "map": "Town10HD_Opt",
+      "weather": "CloudyNight",
+      "seed": 410,
+      "ego_spawn_index": 30,
+      "split": "audit",
+      "frames": 75
+    }
+  ]
+}

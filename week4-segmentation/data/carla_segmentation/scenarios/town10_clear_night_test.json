@@ -1,0 +1,343 @@
+{
+  "name": "town10_clear_night_test",
+  "map": "Town10HD_Opt",
+  "weather": "ClearNight",
+  "seed": 407,
+  "split": "test",
+  "images": 75,
+  "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+  "class_mapping": {
+    "0": "Background",
+    "1": "DrivableArea(runtime tag=1)",
+    "2": "LaneMarking(runtime tag=24)"
+  },
+  "pixel_counts": {
+    "0": 12021109,
+    "1": 5093371,
+    "2": 165520
+  },
+  "semantic_tag_counts": {
+    "1": 5093371,
+    "2": 2085321,
+    "3": 6666622,
+    "4": 158619,
+    "5": 4167,
+    "6": 276097,
+    "7": 1444,
+    "8": 22032,
+    "9": 406318,
+    "10": 1471,
+    "11": 1118779,
+    "14": 262089,
+    "18": 47750,
+    "19": 936,
+    "20": 372803,
+    "21": 2998,
+    "22": 593652,
+    "23": 10,
+    "24": 165520,
+    "25": 1
+  },
+  "records": [
+    {
+      "stem": "town10_clear_night_test_00000",
+      "carla_frame": 3935
+    },
+    {
+      "stem": "town10_clear_night_test_00001",
+      "carla_frame": 3937
+    },
+    {
+      "stem": "town10_clear_night_test_00002",
+      "carla_frame": 3939
+    },
+    {
+      "stem": "town10_clear_night_test_00003",
+      "carla_frame": 3941
+    },
+    {
+      "stem": "town10_clear_night_test_00004",
+      "carla_frame": 3943
+    },
+    {
+      "stem": "town10_clear_night_test_00005",
+      "carla_frame": 3945
+    },
+    {
+      "stem": "town10_clear_night_test_00006",
+      "carla_frame": 3947
+    },
+    {
+      "stem": "town10_clear_night_test_00007",
+      "carla_frame": 3949
+    },
+    {
+      "stem": "town10_clear_night_test_00008",
+      "carla_frame": 3951
+    },
+    {
+      "stem": "town10_clear_night_test_00009",
+      "carla_frame": 3953
+    },
+    {
+      "stem": "town10_clear_night_test_00010",
+      "carla_frame": 3955
+    },
+    {
+      "stem": "town10_clear_night_test_00011",
+      "carla_frame": 3957
+    },
+    {
+      "stem": "town10_clear_night_test_00012",
+      "carla_frame": 3959
+    },
+    {
+      "stem": "town10_clear_night_test_00013",
+      "carla_frame": 3961
+    },
+    {
+      "stem": "town10_clear_night_test_00014",
+      "carla_frame": 3963
+    },
+    {
+      "stem": "town10_clear_night_test_00015",
+      "carla_frame": 3965
+    },
+    {
+      "stem": "town10_clear_night_test_00016",
+      "carla_frame": 3967
+    },
+    {
+      "stem": "town10_clear_night_test_00017",
+      "carla_frame": 3969
+    },
+    {
+      "stem": "town10_clear_night_test_00018",
+      "carla_frame": 3971
+    },
+    {
+      "stem": "town10_clear_night_test_00019",
+      "carla_frame": 3973
+    },
+    {
+      "stem": "town10_clear_night_test_00020",
+      "carla_frame": 3975
+    },
+    {
+      "stem": "town10_clear_night_test_00021",
+      "carla_frame": 3977
+    },
+    {
+      "stem": "town10_clear_night_test_00022",
+      "carla_frame": 3979
+    },
+    {
+      "stem": "town10_clear_night_test_00023",
+      "carla_frame": 3981
+    },
+    {
+      "stem": "town10_clear_night_test_00024",
+      "carla_frame": 3983
+    },
+    {
+      "stem": "town10_clear_night_test_00025",
+      "carla_frame": 3985
+    },
+    {
+      "stem": "town10_clear_night_test_00026",
+      "carla_frame": 3987
+    },
+    {
+      "stem": "town10_clear_night_test_00027",
+      "carla_frame": 3989
+    },
+    {
+      "stem": "town10_clear_night_test_00028",
+      "carla_frame": 3991
+    },
+    {
+      "stem": "town10_clear_night_test_00029",
+      "carla_frame": 3993
+    },
+    {
+      "stem": "town10_clear_night_test_00030",
+      "carla_frame": 3995
+    },
+    {
+      "stem": "town10_clear_night_test_00031",
+      "carla_frame": 3997
+    },
+    {
+      "stem": "town10_clear_night_test_00032",
+      "carla_frame": 3999
+    },
+    {
+      "stem": "town10_clear_night_test_00033",
+      "carla_frame": 4001
+    },
+    {
+      "stem": "town10_clear_night_test_00034",
+      "carla_frame": 4003
+    },
+    {
+      "stem": "town10_clear_night_test_00035",
+      "carla_frame": 4005
+    },
+    {
+      "stem": "town10_clear_night_test_00036",
+      "carla_frame": 4007
+    },
+    {
+      "stem": "town10_clear_night_test_00037",
+      "carla_frame": 4009
+    },
+    {
+      "stem": "town10_clear_night_test_00038",
+      "carla_frame": 4011
+    },
+    {
+      "stem": "town10_clear_night_test_00039",
+      "carla_frame": 4013
+    },
+    {
+      "stem": "town10_clear_night_test_00040",
+      "carla_frame": 4015
+    },
+    {
+      "stem": "town10_clear_night_test_00041",
+      "carla_frame": 4017
+    },
+    {
+      "stem": "town10_clear_night_test_00042",
+      "carla_frame": 4019
+    },
+    {
+      "stem": "town10_clear_night_test_00043",
+      "carla_frame": 4021
+    },
+    {
+      "stem": "town10_clear_night_test_00044",
+      "carla_frame": 4023
+    },
+    {
+      "stem": "town10_clear_night_test_00045",
+      "carla_frame": 4025
+    },
+    {
+      "stem": "town10_clear_night_test_00046",
+      "carla_frame": 4027
+    },
+    {
+      "stem": "town10_clear_night_test_00047",
+      "carla_frame": 4029
+    },
+    {
+      "stem": "town10_clear_night_test_00048",
+      "carla_frame": 4031
+    },
+    {
+      "stem": "town10_clear_night_test_00049",
+      "carla_frame": 4033
+    },
+    {
+      "stem": "town10_clear_night_test_00050",
+      "carla_frame": 4035
+    },
+    {
+      "stem": "town10_clear_night_test_00051",
+      "carla_frame": 4037
+    },
+    {
+      "stem": "town10_clear_night_test_00052",
+      "carla_frame": 4039
+    },
+    {
+      "stem": "town10_clear_night_test_00053",
+      "carla_frame": 4041
+    },
+    {
+      "stem": "town10_clear_night_test_00054",
+      "carla_frame": 4043
+    },
+    {
+      "stem": "town10_clear_night_test_00055",
+      "carla_frame": 4045
+    },
+    {
+      "stem": "town10_clear_night_test_00056",
+      "carla_frame": 4047
+    },
+    {
+      "stem": "town10_clear_night_test_00057",
+      "carla_frame": 4049
+    },
+    {
+      "stem": "town10_clear_night_test_00058",
+      "carla_frame": 4051
+    },
+    {
+      "stem": "town10_clear_night_test_00059",
+      "carla_frame": 4053
+    },
+    {
+      "stem": "town10_clear_night_test_00060",
+      "carla_frame": 4055
+    },
+    {
+      "stem": "town10_clear_night_test_00061",
+      "carla_frame": 4057
+    },
+    {
+      "stem": "town10_clear_night_test_00062",
+      "carla_frame": 4059
+    },
+    {
+      "stem": "town10_clear_night_test_00063",
+      "carla_frame": 4061
+    },
+    {
+      "stem": "town10_clear_night_test_00064",
+      "carla_frame": 4063
+    },
+    {
+      "stem": "town10_clear_night_test_00065",
+      "carla_frame": 4065
+    },
+    {
+      "stem": "town10_clear_night_test_00066",
+      "carla_frame": 4067
+    },
+    {
+      "stem": "town10_clear_night_test_00067",
+      "carla_frame": 4069
+    },
+    {
+      "stem": "town10_clear_night_test_00068",
+      "carla_frame": 4071
+    },
+    {
+      "stem": "town10_clear_night_test_00069",
+      "carla_frame": 4073
+    },
+    {
+      "stem": "town10_clear_night_test_00070",
+      "carla_frame": 4075
+    },
+    {
+      "stem": "town10_clear_night_test_00071",
+      "carla_frame": 4077
+    },
+    {
+      "stem": "town10_clear_night_test_00072",
+      "carla_frame": 4079
+    },
+    {
+      "stem": "town10_clear_night_test_00073",
+      "carla_frame": 4081
+    },
+    {
+      "stem": "town10_clear_night_test_00074",
+      "carla_frame": 4083
+    }
+  ]
+}

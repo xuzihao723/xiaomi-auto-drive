@@ -1,0 +1,7 @@
+data/
+runs/
+weights/*.pt
+demo/*.mp4
+__pycache__/
+*.pyc
+.venv/

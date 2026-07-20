@@ -1,0 +1,344 @@
+{
+  "name": "town05_cloudy_night_val",
+  "map": "Town05",
+  "weather": "CloudyNight",
+  "seed": 409,
+  "split": "val",
+  "images": 75,
+  "label_source": "CARLA 0.9.15 semantic segmentation raw red-channel tags",
+  "class_mapping": {
+    "0": "Background",
+    "1": "DrivableArea(runtime tag=1)",
+    "2": "LaneMarking(runtime tag=24)"
+  },
+  "pixel_counts": {
+    "0": 11274074,
+    "1": 5745943,
+    "2": 259983
+  },
+  "semantic_tag_counts": {
+    "1": 5745943,
+    "2": 1126748,
+    "3": 1648205,
+    "4": 12267,
+    "5": 204509,
+    "6": 262721,
+    "7": 33490,
+    "8": 484,
+    "9": 1056981,
+    "10": 88364,
+    "11": 5767712,
+    "14": 378096,
+    "15": 125785,
+    "20": 23564,
+    "21": 3591,
+    "22": 404150,
+    "24": 259983,
+    "25": 383,
+    "26": 38167,
+    "27": 94034,
+    "28": 4823
+  },
+  "records": [
+    {
+      "stem": "town05_cloudy_night_val_00000",
+      "carla_frame": 7590
+    },
+    {
+      "stem": "town05_cloudy_night_val_00001",
+      "carla_frame": 7592
+    },
+    {
+      "stem": "town05_cloudy_night_val_00002",
+      "carla_frame": 7594
+    },
+    {
+      "stem": "town05_cloudy_night_val_00003",
+      "carla_frame": 7596
+    },
+    {
+      "stem": "town05_cloudy_night_val_00004",
+      "carla_frame": 7598
+    },
+    {
+      "stem": "town05_cloudy_night_val_00005",
+      "carla_frame": 7600
+    },
+    {
+      "stem": "town05_cloudy_night_val_00006",
+      "carla_frame": 7602
+    },
+    {
+      "stem": "town05_cloudy_night_val_00007",
+      "carla_frame": 7604
+    },
+    {
+      "stem": "town05_cloudy_night_val_00008",
+      "carla_frame": 7606
+    },
+    {
+      "stem": "town05_cloudy_night_val_00009",
+      "carla_frame": 7608
+    },
+    {
+      "stem": "town05_cloudy_night_val_00010",
+      "carla_frame": 7610
+    },
+    {
+      "stem": "town05_cloudy_night_val_00011",
+      "carla_frame": 7612
+    },
+    {
+      "stem": "town05_cloudy_night_val_00012",
+      "carla_frame": 7614
+    },
+    {
+      "stem": "town05_cloudy_night_val_00013",
+      "carla_frame": 7616
+    },
+    {
+      "stem": "town05_cloudy_night_val_00014",
+      "carla_frame": 7618
+    },
+    {
+      "stem": "town05_cloudy_night_val_00015",
+      "carla_frame": 7620
+    },
+    {
+      "stem": "town05_cloudy_night_val_00016",
+      "carla_frame": 7622
+    },
+    {
+      "stem": "town05_cloudy_night_val_00017",
+      "carla_frame": 7624
+    },
+    {
+      "stem": "town05_cloudy_night_val_00018",
+      "carla_frame": 7626
+    },
+    {
+      "stem": "town05_cloudy_night_val_00019",
+      "carla_frame": 7628
+    },
+    {
+      "stem": "town05_cloudy_night_val_00020",
+      "carla_frame": 7630
+    },
+    {
+      "stem": "town05_cloudy_night_val_00021",
+      "carla_frame": 7632
+    },
+    {
+      "stem": "town05_cloudy_night_val_00022",
+      "carla_frame": 7634
+    },
+    {
+      "stem": "town05_cloudy_night_val_00023",
+      "carla_frame": 7636
+    },
+    {
+      "stem": "town05_cloudy_night_val_00024",
+      "carla_frame": 7638
+    },
+    {
+      "stem": "town05_cloudy_night_val_00025",
+      "carla_frame": 7640
+    },
+    {
+      "stem": "town05_cloudy_night_val_00026",
+      "carla_frame": 7642
+    },
+    {
+      "stem": "town05_cloudy_night_val_00027",
+      "carla_frame": 7644
+    },
+    {
+      "stem": "town05_cloudy_night_val_00028",
+      "carla_frame": 7646
+    },
+    {
+      "stem": "town05_cloudy_night_val_00029",
+      "carla_frame": 7648
+    },
+    {
+      "stem": "town05_cloudy_night_val_00030",
+      "carla_frame": 7650
+    },
+    {
+      "stem": "town05_cloudy_night_val_00031",
+      "carla_frame": 7652
+    },
+    {
+      "stem": "town05_cloudy_night_val_00032",
+      "carla_frame": 7654
+    },
+    {
+      "stem": "town05_cloudy_night_val_00033",
+      "carla_frame": 7656
+    },
+    {
+      "stem": "town05_cloudy_night_val_00034",
+      "carla_frame": 7658
+    },
+    {
+      "stem": "town05_cloudy_night_val_00035",
+      "carla_frame": 7660
+    },
+    {
+      "stem": "town05_cloudy_night_val_00036",
+      "carla_frame": 7662
+    },
+    {
+      "stem": "town05_cloudy_night_val_00037",
+      "carla_frame": 7664
+    },
+    {
+      "stem": "town05_cloudy_night_val_00038",
+      "carla_frame": 7666
+    },
+    {
+      "stem": "town05_cloudy_night_val_00039",
+      "carla_frame": 7668
+    },
+    {
+      "stem": "town05_cloudy_night_val_00040",
+      "carla_frame": 7670
+    },
+    {
+      "stem": "town05_cloudy_night_val_00041",
+      "carla_frame": 7672
+    },
+    {
+      "stem": "town05_cloudy_night_val_00042",
+      "carla_frame": 7674
+    },
+    {
+      "stem": "town05_cloudy_night_val_00043",
+      "carla_frame": 7676
+    },
+    {
+      "stem": "town05_cloudy_night_val_00044",
+      "carla_frame": 7678
+    },
+    {
+      "stem": "town05_cloudy_night_val_00045",
+      "carla_frame": 7680
+    },
+    {
+      "stem": "town05_cloudy_night_val_00046",
+      "carla_frame": 7682
+    },
+    {
+      "stem": "town05_cloudy_night_val_00047",
+      "carla_frame": 7684
+    },
+    {
+      "stem": "town05_cloudy_night_val_00048",
+      "carla_frame": 7686
+    },
+    {
+      "stem": "town05_cloudy_night_val_00049",
+      "carla_frame": 7688
+    },
+    {
+      "stem": "town05_cloudy_night_val_00050",
+      "carla_frame": 7690
+    },
+    {
+      "stem": "town05_cloudy_night_val_00051",
+      "carla_frame": 7692
+    },
+    {
+      "stem": "town05_cloudy_night_val_00052",
+      "carla_frame": 7694
+    },
+    {
+      "stem": "town05_cloudy_night_val_00053",
+      "carla_frame": 7696
+    },
+    {
+      "stem": "town05_cloudy_night_val_00054",
+      "carla_frame": 7698
+    },
+    {
+      "stem": "town05_cloudy_night_val_00055",
+      "carla_frame": 7700
+    },
+    {
+      "stem": "town05_cloudy_night_val_00056",
+      "carla_frame": 7702
+    },
+    {
+      "stem": "town05_cloudy_night_val_00057",
+      "carla_frame": 7704
+    },
+    {
+      "stem": "town05_cloudy_night_val_00058",
+      "carla_frame": 7706
+    },
+    {
+      "stem": "town05_cloudy_night_val_00059",
+      "carla_frame": 7708
+    },
+    {
+      "stem": "town05_cloudy_night_val_00060",
+      "carla_frame": 7710
+    },
+    {
+      "stem": "town05_cloudy_night_val_00061",
+      "carla_frame": 7712
+    },
+    {
+      "stem": "town05_cloudy_night_val_00062",
+      "carla_frame": 7714
+    },
+    {
+      "stem": "town05_cloudy_night_val_00063",
+      "carla_frame": 7716
+    },
+    {
+      "stem": "town05_cloudy_night_val_00064",
+      "carla_frame": 7718
+    },
+    {
+      "stem": "town05_cloudy_night_val_00065",
+      "carla_frame": 7720
+    },
+    {
+      "stem": "town05_cloudy_night_val_00066",
+      "carla_frame": 7722
+    },
+    {
+      "stem": "town05_cloudy_night_val_00067",
+      "carla_frame": 7724
+    },
+    {
+      "stem": "town05_cloudy_night_val_00068",
+      "carla_frame": 7726
+    },
+    {
+      "stem": "town05_cloudy_night_val_00069",
+      "carla_frame": 7728
+    },
+    {
+      "stem": "town05_cloudy_night_val_00070",
+      "carla_frame": 7730
+    },
+    {
+      "stem": "town05_cloudy_night_val_00071",
+      "carla_frame": 7732
+    },
+    {
+      "stem": "town05_cloudy_night_val_00072",
+      "carla_frame": 7734
+    },
+    {
+      "stem": "town05_cloudy_night_val_00073",
+      "carla_frame": 7736
+    },
+    {
+      "stem": "town05_cloudy_night_val_00074",
+      "carla_frame": 7738
+    }
+  ]
+}

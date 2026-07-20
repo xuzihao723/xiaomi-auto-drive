@@ -1,0 +1,23 @@
+{
+  "data": "/mnt/e/Users/xiaomi_codex/xiaomi_week4/data/carla_segmentation",
+  "output": "/mnt/e/Users/xiaomi_codex/xiaomi_week4/runs/unet_final",
+  "epochs": 30,
+  "batch_size": 4,
+  "workers": 2,
+  "device": "cuda",
+  "width": 640,
+  "height": 360,
+  "base_channels": 32,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.0001,
+  "class_weights": [
+    0.2,
+    1.0,
+    4.0
+  ],
+  "seed": 42,
+  "amp": false,
+  "resume": "/mnt/e/Users/xiaomi_codex/xiaomi_week4/runs/unet_final/best.pt",
+  "reset_optimizer": true,
+  "device_used": "cuda"
+}
