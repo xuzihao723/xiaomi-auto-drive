@@ -531,7 +531,7 @@ def main() -> None:
         Spacer(1, 7 * mm),
         p("GitHub 仓库", "h2"),
         p('<link href="https://github.com/xuzihao723/xiaomi-auto-drive" color="#2F75B5">https://github.com/xuzihao723/xiaomi-auto-drive</link>', "url"),
-        p("第四周目录：week4-segmentation/；Release 标签：week4-submission；附件：xiaomi_week4.zip。", "body"),
+        p("第四周目录：road-segmentation/；Release 标签：week4-submission；附件：xiaomi_week4.zip。", "body"),
         Spacer(1, 4 * mm),
         p("说明：完整 1300 张训练图像不重复上传到代码目录；提交包保留采集代码、场景配置、manifest、验证摘要和可视化证据，可按 README 重新采集。最终权重、演示视频和报告均包含在 Release 压缩包中。", "callout"),
         PageBreak(),

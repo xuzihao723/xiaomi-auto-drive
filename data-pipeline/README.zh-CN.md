@@ -1,4 +1,6 @@
-# 基于视觉的城市道路自动驾驶仿真系统
+# 数据采集与 KITTI 转换
+
+[English](README.md) · **简体中文** · [项目首页](../README.zh-CN.md)
 
 ## 第二周：CARLA 仿真数据采集与 KITTI 格式转换
 
@@ -28,7 +30,7 @@
 ## 项目结构
 
 ```text
-week2/
+data-pipeline/
 ├── configs/
 │   └── sensors.json
 ├── src/
@@ -65,10 +67,9 @@ cd "E:\CARLA_0.9.15\WindowsNoEditor"
 在 WSL2 Ubuntu 中执行：
 
 ```bash
-cd ~/xiaomi_ad_project/week1
-source venv/bin/activate
-
-cd ~/xiaomi_ad_project/week2
+cd xiaomi-auto-drive/data-pipeline
+python3.10 -m venv .venv
+source .venv/bin/activate
 ```
 
 安装依赖：

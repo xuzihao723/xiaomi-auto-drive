@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-labelledby="title description">
+<title id="title">CARLA Urban Perception</title><desc id="description">Synchronized data, object detection, road segmentation and visual integration.</desc>
+<rect width="1200" height="250" rx="18" fill="#0d1729"/>
+<path d="M875 250 959 28h82l91 222" fill="#172942"/><path d="m966 250 31-70m12-32 25-67" stroke="#93c5fd" stroke-width="5" stroke-linecap="round"/>
+<path d="M840 228 928 47m128 0 92 181" stroke="#60a5fa" stroke-width="2" opacity=".65"/><rect x="964" y="137" width="65" height="44" rx="5" fill="none" stroke="#86efac" stroke-width="3"/>
+<g font-family="Arial, Helvetica, sans-serif"><text x="48" y="46" fill="#93c5fd" font-size="14" letter-spacing="3">COMPUTER VISION · SIMULATION · REPRODUCIBLE EXPERIMENTS</text>
+<text x="48" y="101" fill="#f8fafc" font-size="43" font-weight="700">CARLA Urban Perception</text><text x="48" y="140" fill="#cbd5e1" font-size="20">From synchronized sensors to a unified road-scene visualization.</text>
+<text x="48" y="201" fill="#e2e8f0" font-size="18">Data pipeline → Detection + segmentation → Visual integration</text></g>
+</svg>

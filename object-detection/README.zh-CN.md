@@ -1,4 +1,6 @@
-# Xiaomi Auto Drive：第三周目标检测完整成果
+# 目标检测
+
+[English](README.md) · **简体中文** · [项目首页](../README.zh-CN.md)
 
 本目录是第三周感知模块的完整最终版本，不是单独的“问题修复包”。内容覆盖数据采集与标签生成、YOLOv8 四类别训练、严格分组评估、PR 曲线与混淆矩阵、类别专长双模型融合、推理测速和一分钟演示视频。后续发现的问题已经直接融合进最终数据、代码、权重和评估结果中，修复记录仅作为质量说明保留。
 
@@ -174,7 +176,7 @@ TrafficSign 目标由 11 个增加到 20 个后，其 mAP50 从 0.338 变为 0.3
 ## 6. 目录说明
 
 ```text
-week3-perception/
+object-detection/
 ├── configs/       # 数据集、场景、划分和人工复核配置
 ├── detection/     # 采集、转换、训练、推理、融合、评估和测速代码
 ├── evaluation/    # PR 曲线、混淆矩阵及人工复核证据
@@ -211,7 +213,7 @@ python detection/make_demo_video.py \
 
 ## 8. 提交材料与下载
 
-- 第三周代码目录：<https://github.com/xuzihao723/xiaomi-auto-drive/tree/main/week3-perception>
+- 第三周代码目录：<https://github.com/xuzihao723/xiaomi-auto-drive/tree/main/object-detection>
 - 第三周 Release：<https://github.com/xuzihao723/xiaomi-auto-drive/releases/tag/week3-submission>
 - 完整压缩包：<https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week3-submission/xiaomi_week3.zip>
 - 中文实验报告：`reports/第三周实验报告.pdf`
@@ -223,4 +225,3 @@ python detection/make_demo_video.py \
 - 完整训练集仍主要使用 CARLA 自动生成标签；人工复核范围是固定的 150 张独立测试图像。
 - 交通灯和交通标志属于远距离小目标，定位精度仍低于车辆和行人。
 - 推理速度来自笔记本软件管线，尚未完成真实汽车计算平台的摄像头到控制输出端到端延迟测试。
-

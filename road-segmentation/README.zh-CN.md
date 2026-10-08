@@ -1,4 +1,6 @@
-# Xiaomi Auto Drive：第四周语义分割
+# 道路分割与感知集成
+
+[English](README.md) · **简体中文** · [项目首页](../README.zh-CN.md)
 
 本目录严格对应项目 PDF 的第四周任务：制作车道线/可行驶区域分割数据集，训练 U-Net，提取可行驶区域并拟合车道线，最后与第三周目标检测合成 1 分钟演示视频。
 
@@ -93,7 +95,7 @@ python segmentation/train_unet.py \
 python segmentation/evaluate.py \
   --data data/carla_segmentation \
   --weights weights/unet_week4_best.pt \
-  --output reports/test_evaluation_night_adapt \
+  --output outputs/test_evaluation_night_adapt \
   --device cuda
 
 python tools/plot_training.py \
@@ -107,7 +109,7 @@ python tools/plot_training.py \
 python segmentation/inference.py \
   --weights weights/unet_week4_best.pt \
   --source data/carla_segmentation/images/test/town05_hard_rain_test_00000.png \
-  --output reports/example_overlay.png \
+  --output outputs/example_overlay.png \
   --device cuda
 ```
 
@@ -115,14 +117,16 @@ python segmentation/inference.py \
 
 ## 6. 一分钟集成视频
 
+运行前请下载并放置两个检测权重与最终分割权重，重新生成输入图像。详见[复现指南](../docs/getting-started.md)。脚本至少需要 900 张图像；输出 FPS 为视频播放帧率。OpenCV 写出使用 `mp4v`，正式发布的 H.264 视频经过单独编码。
+
 ```bash
 python integration/integrated_demo.py \
   --source data/carla_segmentation/images \
-  --segmentation-weights runs/unet_final/best.pt \
-  --road-user-weights ../xiaomi_week3/weights/road_user_best.pt \
-  --traffic-control-weights ../xiaomi_week3/weights/traffic_control_best.pt \
-  --output demo/week4_integrated_perception_1min.mp4 \
-  --summary reports/integrated_video_summary.json \
+  --segmentation-weights weights/unet_week4_best.pt \
+  --road-user-weights ../object-detection/weights/road_user_best.pt \
+  --traffic-control-weights ../object-detection/weights/traffic_control_best.pt \
+  --output outputs/integrated_perception.mp4 \
+  --summary outputs/integrated_video_summary.json \
   --fps 15 --seconds 60 --device cuda
 ```
 
@@ -139,7 +143,7 @@ python integration/integrated_demo.py \
 ## GitHub 与下载
 
 - 累计项目仓库：<https://github.com/xuzihao723/xiaomi-auto-drive>
-- 第四周代码目录：<https://github.com/xuzihao723/xiaomi-auto-drive/tree/main/week4-segmentation>
+- 第四周代码目录：<https://github.com/xuzihao723/xiaomi-auto-drive/tree/main/road-segmentation>
 - 第四周 Release：<https://github.com/xuzihao723/xiaomi-auto-drive/releases/tag/week4-submission>
 - 第四周压缩包：<https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week4-submission/xiaomi_week4.zip>
 - 中文实验报告：`reports/第四周实验报告.pdf`

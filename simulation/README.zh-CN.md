@@ -1,4 +1,6 @@
-# Week 1：环境搭建与 CARLA 仿真验证
+# 仿真环境
+
+[English](README.md) · **简体中文** · [项目首页](../README.zh-CN.md)
 
 第一周完成自动驾驶仿真项目的基础环境搭建，验证 Windows CARLA Server 与 WSL2 Ubuntu Python Client 的通信，并完成交通流和人工驾驶测试。
 
@@ -21,4 +23,3 @@
 ![CARLA Server](screenshots/01_carla_server.png)
 
 ![Manual Control](screenshots/03_manual_control.png)
-

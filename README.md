@@ -1,81 +1,190 @@
-# Xiaomi Auto Drive
+<a id="readme-top"></a>
 
-基于视觉的城市道路端到端自动驾驶仿真系统。本仓库按周整理 CARLA 仿真、数据采集、目标检测、语义分割以及后续规划控制成果。
+<div align="center">
+  <img src="docs/assets/project-banner.svg" alt="CARLA Urban Perception: synchronized data, detection, segmentation and visual integration" width="100%">
+  <h1>CARLA Urban Perception</h1>
+  <p>A visual perception project for simulated urban driving.<br>YOLOv8 object detection · U-Net road segmentation · lane geometry · reproducible evaluation</p>
+  <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
+  <p><a href="#visual-showcase">View results</a> · <a href="#getting-started">Get started</a> · <a href="docs/architecture.md">Explore architecture</a> · <a href="https://github.com/xuzihao723/xiaomi-auto-drive/releases">Download artifacts</a></p>
+  <p>
+    <img src="https://img.shields.io/badge/CARLA-0.9.15-2563eb?style=flat-square" alt="CARLA 0.9.15">
+    <img src="https://img.shields.io/badge/Python-3.10-3776ab?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Tested with Python 3.10">
+    <img src="https://img.shields.io/badge/PyTorch-YOLOv8%20%2B%20U--Net-ee4c2c?style=flat-square&amp;logo=pytorch&amp;logoColor=white" alt="PyTorch, YOLOv8 and U-Net">
+    <img src="https://img.shields.io/badge/Scope-CARLA%20simulation-475569?style=flat-square" alt="Scope: CARLA simulation">
+  </p>
+</div>
 
-> 本项目用于课程学习与仿真实验，不代表小米汽车官方产品。
+> An independent learning and simulation project, maintained in the `xiaomi-auto-drive` repository. It is not an official Xiaomi product. The implemented scope is data engineering and visual perception; planning and vehicle control remain future work.
 
-## 项目进度
+<details>
+<summary><strong>Table of contents</strong></summary>
 
-| 周次 | 阶段 | 核心成果 | 完整提交包 |
-| --- | --- | --- | --- |
-| Week 1 | 环境搭建 | WSL2、Ubuntu 22.04、CARLA 0.9.15 环境与基础仿真验证 | [xiaomi_week1.zip](https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week1-submission/xiaomi_week1.zip) |
-| Week 2 | 数据管线 | RGB + LiDAR 同步采集、1000 帧 KITTI 数据和自动验收 | [xiaomi_week2.zip](https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week2-submission/xiaomi_week2.zip) |
-| Week 3 | 目标检测 | YOLOv8 四类别检测、严格分组评估、人工复核和多后端测速 | [xiaomi_week3.zip](https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week3-submission/xiaomi_week3.zip) |
-| Week 4 | 语义分割 | U-Net 车道线/可行驶区域分割、几何后处理与检测融合 | [xiaomi_week4.zip](https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week4-submission/xiaomi_week4.zip) |
+- [About the project](#about-the-project)
+- [Visual showcase](#visual-showcase)
+- [Results at a glance](#results-at-a-glance)
+- [System architecture](#system-architecture)
+- [Explore the modules](#explore-the-modules)
+- [Engineering decisions](#engineering-decisions)
+- [Getting started](#getting-started)
+- [Repository layout](#repository-layout)
+- [Roadmap and limitations](#roadmap-and-limitations)
+- [Maintainer and contributions](#maintainer-and-contributions)
+- [License and acknowledgments](#license-and-acknowledgments)
 
-## 第四周最终结果
+</details>
 
-第四周完成 1300 组 CARLA 同步 RGB/语义标签数据、U-Net 三分类训练、夜间域适配、可行驶区域提取、左右车道线拟合以及目标检测与分割融合视频。
+## About the project
 
-| 评估范围 | 图像 | Pixel Accuracy | Road IoU | Lane IoU | Road/Lane mIoU |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| 严格 test | 175 | 0.901 | 0.749 | 0.603 | 0.676 |
-| 锁定 audit | 75 | 0.960 | 0.877 | 0.715 | 0.796 |
+This project builds a traceable perception workflow around CARLA urban scenes: synchronize RGB and LiDAR, create KITTI and YOLO datasets, detect four classes of road objects, segment drivable areas and lane markings, and combine the outputs in a video demonstration.
 
-- Town10 夜间 test mIoU：`0.004 → 0.778`。
-- Town05 暴雨 test mIoU：`0.659 → 0.637`，保留了适配后的轻微天气权衡。
-- 融合视频：H.264/yuv420p、640×360、15 FPS、900 帧、60.0 秒。
-- 详细代码、指标证据和中文实验报告见 [`week4-segmentation/`](week4-segmentation/README.md)。
+The repository is organized by **technical responsibility**. The original four-week sequence is preserved in the [development log](docs/development-log.md) and release tags.
 
-## 第三周最终结果
+**Built with:** CARLA 0.9.15, Windows 11 + WSL2 / Ubuntu 22.04, Python 3.10, PyTorch, Ultralytics YOLOv8, U-Net, OpenCV, NumPy and Matplotlib. ONNX and TensorRT are used for optional deployment benchmarks.
 
-第三周最终方案采用类别专长双模型融合：`road_user_best.pt` 负责车辆和行人，`traffic_control_best.pt` 负责交通灯和交通标志。
+## Visual showcase
 
-| 类别 | Precision | Recall | mAP50 | mAP50-95 |
-| --- | ---: | ---: | ---: | ---: |
-| Car | 0.952 | 0.829 | 0.857 | 0.732 |
-| Pedestrian | 0.885 | 0.804 | 0.882 | 0.615 |
-| TrafficLight | 0.839 | 0.322 | 0.522 | 0.196 |
-| TrafficSign | 0.843 | 0.404 | 0.554 | 0.071 |
-| 总体 | 0.880 | 0.590 | 0.704 | 0.403 |
+[![Detection and segmentation fusion across simulated day and night scenes](site/assets/fusion-preview.jpg)](road-segmentation/demo/README.md)
 
-第三周还完成了独立测试集人工复核，以及 PyTorch CPU/GPU、ONNX 和 TensorRT 的同口径推理测速。测速结果来自笔记本软件推理，不等于真实车载端到端延迟。
+*Actual frames from the published fusion demo: object boxes, drivable-area overlays and fitted lane curves. The “Week 4” labels belong to the original recording.*
 
-## 仓库结构
+**[Download the 60-second fusion demo package](https://github.com/xuzihao723/xiaomi-auto-drive/releases/download/week4-submission/xiaomi_week4.zip)** · [Video metadata and checksum](road-segmentation/demo/README.md)
 
-```text
-xiaomi-auto-drive/
-├── docs/                         # 系统架构与阶段进度
-├── week1-environment/            # 环境搭建文档与截图
-├── week2-data-pipeline/          # CARLA 数据采集与 KITTI 转换
-├── week3-perception/             # YOLOv8 训练、评估、人工复核与部署基准
-└── week4-segmentation/           # U-Net 分割、几何后处理与感知融合
+<details>
+<summary>Inspect road geometry and evaluation evidence</summary>
+
+![Road segmentation and lane fitting on a separate audit example](site/assets/lane-fit.png)
+
+The image above is an **audit-set example**, not the fixed test set. See the [segmentation experiment notes](docs/experiments.md#road-segmentation) for the distinction.
+
+- [Detection PR curve](object-detection/evaluation/BoxPR_curve.png)
+- [Inference benchmark comparison](object-detection/reports/inference_benchmark_comparison.png)
+- [Segmentation training curves](road-segmentation/reports/training_curves.png)
+- [Night adaptation comparison](road-segmentation/reports/night_adaptation_comparison.json)
+
+</details>
+
+## Results at a glance
+
+| Capability | Published result | Evaluation scope |
+| :--- | :--- | :--- |
+| Four-class detection | **mAP50 0.704** / mAP50–95 0.403 | 300 strictly grouped test images; 3,472 targets |
+| Road and lane segmentation | **Road/Lane mIoU 0.676** | 175 fixed test images; background excluded from this mean |
+| Integrated visualization | **60 seconds** / 900 frames | 640 × 360, 15 FPS; output-video rate, not measured inference throughput |
+
+Under the same strict detection test protocol, class-specialized fusion improves mAP50 from **0.473 to 0.704** (+0.231 absolute). On the separate 75-image segmentation audit set, Road/Lane mIoU is **0.796**. These two segmentation sets are reported separately.
+
+Metrics are linked to [raw JSON, dataset splits and experiment comparisons](docs/experiments.md). Full per-class tables and deployment timings live in the module documentation.
+
+## System architecture
+
+```mermaid
+flowchart LR
+    S[CARLA scenes] --> C[Synchronized capture]
+    C --> D[RGB / LiDAR / actor labels]
+    C --> M[RGB / semantic masks]
+    D --> K[KITTI and grouped YOLO data]
+    K --> Y[YOLOv8 specialized detectors]
+    M --> U[U-Net road segmentation]
+    U --> G[Drivable polygon / lane fitting]
+    Y --> F[Visual integration]
+    G --> F
+    Y --> E[Independent evaluation]
+    U --> E
+    F --> V[Demo video and evidence]
 ```
 
-Git 主分支保存代码、配置、文档和可审阅结果。完整数据、最终权重及演示视频放在对应 GitHub Release 附件中。
+LiDAR supports the data pipeline; the demonstrated detectors and segmenter use RGB images. Visual integration combines rendered perception outputs, without claiming sensor fusion or closed-loop driving. [Read the architecture and module contracts →](docs/architecture.md)
 
-## 快速开始
+## Explore the modules
+
+| Module | What to explore | Entry point |
+| :--- | :--- | :--- |
+| **Simulation** | Windows CARLA Server, WSL2 client, traffic and manual-driving validation | [simulation/](simulation/README.md) |
+| **Data pipeline** | Frame-aligned RGB/LiDAR capture, projection, KITTI conversion and validation | [data-pipeline/](data-pipeline/README.md) |
+| **Object detection** | Four classes, grouped splits, dual-model inference, label review and backend benchmarks | [object-detection/](object-detection/README.md) |
+| **Road segmentation** | Three-class U-Net, night adaptation, drivable-area extraction and lane fitting | [road-segmentation/](road-segmentation/README.md) |
+
+Each module has an English entry page and a linked Chinese guide. Original experiment reports remain available in Chinese.
+
+## Engineering decisions
+
+| Problem | Project approach | Evidence |
+| :--- | :--- | :--- |
+| Adjacent frames can leak across dataset splits | Group by scene / continuous-frame block, with buffer frames and overlap checks | [Split validation](object-detection/reports/grouped_validation.json) |
+| Road users and small traffic-control objects need different attention | Assign vehicles/pedestrians and lights/signs to specialized YOLOv8 models | [Fusion evaluation](object-detection/reports/evaluation_metrics_fusion_test.json) |
+| Incomplete labels can distort reported accuracy | Review 150 old independent test images and keep traceable corrections | [Review evidence](object-detection/evaluation/traffic_review/) |
+| Night scenes expose a segmentation domain gap | Adapt with night scenes and report both improvement and weather tradeoffs | [Before/after metrics](road-segmentation/reports/night_adaptation_comparison.json) |
+
+Night test mIoU improves from **0.004 to 0.778**, while heavy-rain test mIoU changes from **0.659 to 0.637**. The tradeoff is retained in the published results.
+
+## Getting started
+
+### Browse without running CARLA
+
+Start with the [visual showcase](#visual-showcase), [experiment evidence](docs/experiments.md) and [release artifacts](https://github.com/xuzihao723/xiaomi-auto-drive/releases). The static bilingual portfolio is in [site/](site/README.md); its hosting instructions are included there.
+
+### Set up the perception environment
+
+The recorded training environment uses **Python 3.10 on WSL2 Ubuntu 22.04**. A compatible NVIDIA GPU is needed to reproduce the recorded CUDA runs. CARLA Server 0.9.15 is needed for new data collection, not for browsing saved results.
 
 ```bash
-cd week4-segmentation
-python3 -m venv .venv
+git clone https://github.com/xuzihao723/xiaomi-auto-drive.git
+cd xiaomi-auto-drive/road-segmentation
+python3.10 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-第四周完整复现命令见 [Week 4 README](week4-segmentation/README.md)，前三周内容仍保留在各自目录与 Release 中。
+Before inference, download the detection and segmentation release packages and copy the selected published weights into these locations:
 
-## 当前边界
+```text
+object-detection/weights/road_user_best.pt
+object-detection/weights/traffic_control_best.pt
+road-segmentation/weights/unet_week4_best.pt
+```
 
-- 训练和测试数据主要来自 CARLA，尚不能代表真实道路相机域。
-- 当前语义分割覆盖 Town05 与 Town10HD_Opt；夜间适配后暴雨能力存在小幅权衡。
-- 车道线拟合仍是像素结果上的几何启发式处理，强遮挡和极端曲率下需要时序约束。
-- TensorRT 等速度数据来自笔记本软件推理，尚未完成真实汽车计算平台端到端延迟测试。
+Large weights and videos are **release downloads**, not files included by `git clone`. The 1,300 raw segmentation image/mask pairs are not bundled in the release: regenerate them with the published collector and scene configuration. See the [step-by-step setup guide](docs/getting-started.md) before training or running the integrated demo.
 
-## 技术栈
+## Repository layout
 
-- CARLA 0.9.15
-- Windows 11 + WSL2 Ubuntu 22.04
-- Python 3.10+
-- PyTorch / Ultralytics YOLOv8 / U-Net
-- OpenCV / NumPy / Matplotlib / ReportLab
+```text
+xiaomi-auto-drive/
+├── README.md                  # English project overview
+├── README.zh-CN.md            # Chinese project overview
+├── simulation/                # Environment and simulator validation
+├── data-pipeline/             # Capture, conversion and data checks
+├── object-detection/          # YOLOv8 training, evaluation and deployment
+├── road-segmentation/         # U-Net, geometry and visual integration
+├── docs/                      # Architecture, experiments and development log
+└── site/                      # Bilingual static portfolio and shared images
+```
+
+Directory names have changed; historical release tags and archive layouts retain their original names. [Migration map and artifact placement →](docs/getting-started.md#directory-migration)
+
+## Roadmap and limitations
+
+- [x] Synchronized CARLA capture and KITTI conversion.
+- [x] Four-class detection with grouped evaluation and label-review evidence.
+- [x] Road/lane segmentation, geometric extraction and visual integration.
+- [x] English/Chinese project overviews and a static portfolio page.
+- [ ] Real-world camera-domain validation and more varied scenarios.
+- [ ] Temporal lane constraints and robust handling of occlusion / sharp curves.
+- [ ] Planning, control and closed-loop driving evaluation.
+- [ ] Camera-to-control latency on an actual automotive compute platform.
+
+Published data comes primarily from CARLA Town05 and Town10HD_Opt. Small traffic-control targets remain difficult. Lane fitting is a geometric heuristic over predicted pixels. Notebook PyTorch/ONNX/TensorRT benchmarks do not establish vehicle-level real-time performance.
+
+## Maintainer and contributions
+
+Maintained by **[xuzihao723](https://github.com/xuzihao723)**. This repository documents project work in data engineering, model training, evaluation and demo integration; it builds on CARLA and existing learning frameworks.
+
+For questions or proposed improvements, [open an issue](https://github.com/xuzihao723/xiaomi-auto-drive/issues). Contributions should describe the affected module, reproduction steps, and evaluation conditions. Keep large models/datasets out of Git and preserve raw experiment evidence.
+
+## License and acknowledgments
+
+No project-wide license has been declared in this repository. Third-party libraries and artifacts remain subject to their respective licenses; no license badge is implied.
+
+- [CARLA](https://github.com/carla-simulator/carla), [Ultralytics](https://github.com/ultralytics/ultralytics), [PyTorch](https://github.com/pytorch/pytorch) and [OpenCV](https://github.com/opencv/opencv).
+- README organization and presentation inspired by [awesome-readme](https://github.com/matiassingers/awesome-readme) and [Best-README-Template](https://github.com/othneildrew/Best-README-Template).
+
+<p align="right"><a href="#readme-top">Back to top ↑</a></p>
