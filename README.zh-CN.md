@@ -196,6 +196,5 @@ xiaomi-auto-drive/
 仓库尚未声明项目级许可证。第三方库和附件遵循各自许可，首页不添加未经确认的许可证徽章。
 
 - [CARLA](https://github.com/carla-simulator/carla)、[Ultralytics](https://github.com/ultralytics/ultralytics)、[PyTorch](https://github.com/pytorch/pytorch)、[OpenCV](https://github.com/opencv/opencv)。
-- README 的组织与展示参考了 [awesome-readme](https://github.com/matiassingers/awesome-readme) 和 [Best-README-Template](https://github.com/othneildrew/Best-README-Template)。
 
 <p align="right"><a href="#readme-top">返回顶部 ↑</a></p>
