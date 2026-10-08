@@ -5,7 +5,7 @@
   <h1>CARLA Urban Perception</h1>
   <p>A visual perception project for simulated urban driving.<br>YOLOv8 object detection · U-Net road segmentation · lane geometry · reproducible evaluation</p>
   <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
-  <p><a href="#visual-showcase">View results</a> · <a href="#getting-started">Get started</a> · <a href="docs/architecture.md">Explore architecture</a> · <a href="https://github.com/xuzihao723/xiaomi-auto-drive/releases">Download artifacts</a></p>
+  <p><a href="https://xuzihao723.github.io/xiaomi-auto-drive/">Live portfolio ↗</a> · <a href="#visual-showcase">View results</a> · <a href="#getting-started">Get started</a> · <a href="docs/architecture.md">Explore architecture</a> · <a href="https://github.com/xuzihao723/xiaomi-auto-drive/releases">Download artifacts</a></p>
   <p>
     <img src="https://img.shields.io/badge/CARLA-0.9.15-2563eb?style=flat-square" alt="CARLA 0.9.15">
     <img src="https://img.shields.io/badge/Python-3.10-3776ab?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Tested with Python 3.10">

@@ -5,7 +5,7 @@
   <h1>CARLA 城市道路视觉感知系统</h1>
   <p>面向城市道路仿真的视觉感知项目。<br>YOLOv8 目标检测 · U-Net 道路分割 · 车道线几何提取 · 可追溯实验评估</p>
   <p><a href="README.md">English</a> · <strong>简体中文</strong></p>
-  <p><a href="#visual-showcase">查看效果</a> · <a href="#getting-started">开始使用</a> · <a href="docs/architecture.md">系统架构</a> · <a href="https://github.com/xuzihao723/xiaomi-auto-drive/releases">下载成果</a></p>
+  <p><a href="https://xuzihao723.github.io/xiaomi-auto-drive/zh.html">作品展示页 ↗</a> · <a href="#visual-showcase">查看效果</a> · <a href="#getting-started">开始使用</a> · <a href="docs/architecture.md">系统架构</a> · <a href="https://github.com/xuzihao723/xiaomi-auto-drive/releases">下载成果</a></p>
   <p>
     <img src="https://img.shields.io/badge/CARLA-0.9.15-2563eb?style=flat-square" alt="CARLA 0.9.15">
     <img src="https://img.shields.io/badge/Python-3.10-3776ab?style=flat-square&amp;logo=python&amp;logoColor=white" alt="已验证 Python 3.10">
