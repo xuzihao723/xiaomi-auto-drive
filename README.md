@@ -185,6 +185,5 @@ For questions or proposed improvements, [open an issue](https://github.com/xuzih
 No project-wide license has been declared in this repository. Third-party libraries and artifacts remain subject to their respective licenses; no license badge is implied.
 
 - [CARLA](https://github.com/carla-simulator/carla), [Ultralytics](https://github.com/ultralytics/ultralytics), [PyTorch](https://github.com/pytorch/pytorch) and [OpenCV](https://github.com/opencv/opencv).
-- README organization and presentation inspired by [awesome-readme](https://github.com/matiassingers/awesome-readme) and [Best-README-Template](https://github.com/othneildrew/Best-README-Template).
 
 <p align="right"><a href="#readme-top">Back to top ↑</a></p>
